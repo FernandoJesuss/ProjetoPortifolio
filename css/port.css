@@ -285,3 +285,23 @@ z-index: 1;
 overflow: hidden;
 
 }
+
+.social-icons a i{
+font-size: 1.5rem;
+
+}
+
+.social-icons a:hover{
+color: var(--bg-color);
+
+}
+
+.social-icons a::before{
+content: "";
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+background: var(--hover-color);
+
+}
