@@ -613,7 +613,7 @@ a.btn:nth-child(2)::before {
 
 .box {
     position: relative;
-    margin: 10px 0;
+    margin: 0px 30px;
     flex: 1 1 15rem;
 }
 
@@ -648,7 +648,7 @@ a.btn:nth-child(2)::before {
     justify-content: center;
     align-items: center;
     /* border: 2px solid #fff; */
-
+    
 }
 
 .circle .points {

@@ -44,18 +44,19 @@ currentWordIndex = currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
 changeText();
 setInterval(changeText,3000)
 
-
 //circle skill//////////////////////////////////////////////////////////////////////////////////////////
+
 const circles = document.querySelectorAll(".circle");
 circles.forEach(elem=>{
 var dots = elem.getAttribute("data-dots");
 var marked = elem.getAttribute("data-percent");
-var percent = math.floor(dots*marked/100); 
-var points = "";
+var percent = Math.floor(dots*marked/100);
+var points ="";
 var rotate = 360 / dots;
 
 for(let i = 0 ; i < dots ; i++){
-    points += <div class="points" style="--i:${i}; --rot:${rotate}deg"></div>;
+    
+    points += `<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>`;
 }
 
 elem.innerHTML = points;
@@ -67,5 +68,11 @@ for(let i = 0; i<percent ; i++){
 
 
 })
+
+//01:13 ///////////////////////////////////
+
+
+
+
 
 
