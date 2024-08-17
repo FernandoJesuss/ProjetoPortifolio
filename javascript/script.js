@@ -69,8 +69,8 @@ for(let i = 0; i<percent ; i++){
 
 })
 
-//01:13 ///////////////////////////////////
-
+//mix it up portfolio section 
+var mixer = mixitup('.portfolio-gallery');
 
 
 
