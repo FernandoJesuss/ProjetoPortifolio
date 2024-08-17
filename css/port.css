@@ -162,7 +162,7 @@ section {
 
 }
 
-.change-text h3 .word .letter .behind {
+.change-text h3 .word .letter .behind { /*behance olhar no html para se esta correto*/
 
     transform: rotateX(-90deg);
 
@@ -331,20 +331,18 @@ a.btn:nth-child(2)::before {
 
 }
 
- .liquid-shape {
+.liquid-shape {
     position: absolute;
     width: 100%;
     height: 100%;
-     z-index: -1; 
+    z-index: -1;
     top: -25%;
-    animation: pulse 2s infinite alternate; /* Animação de pulsação */
-    
+
 }
 
 .liquid-shape:nth-child(2) {
     filter: blur(50px);
-
-} 
+}
 
 /* Sobre Section css-----------------------------------------------------------------------*/
 .about {
@@ -651,7 +649,7 @@ a.btn:nth-child(2)::before {
     justify-content: center;
     align-items: center;
     /* border: 2px solid #fff; */
-    
+
 }
 
 .circle .points {
@@ -661,14 +659,12 @@ a.btn:nth-child(2)::before {
     position: absolute;
     border-radius: 3px;
     transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
-    animation: glow 0.04s linear forwards;
-    animation-delay: calc(var(--i)*0.05s);
 
 }
 
-.points .marked{
+.points.marked{
 
-    animation: glow 0.04s linear forwards;
+    animation: glow 0.04ms linear forwards;
     animation-delay: calc(var(--i)*0.05s);
 }
 
@@ -678,6 +674,15 @@ a.btn:nth-child(2)::before {
 
 
 
+
+
+
+
+
+/* .skill-righ .text {
+    width: 72%;
+    animation: html 2s;
+} */
 
 
 
