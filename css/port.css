@@ -30,6 +30,24 @@
 
 }
 
+::-webkit-scrollbar{
+height: 0;
+width: .5rem;
+
+}
+
+::-webkit-scrollbar-track{
+background: var(--secon-bg-color);
+
+}
+
+::-webkit-scrollbar-thumb{
+background: var(--hover-color);
+border-radius: 5rem;
+
+
+}
+
 body {
     font-family: "Poppins", sans-serif;
     background-color: var(--bg-color);
@@ -206,7 +224,7 @@ section {
 
 }
 
-.btn-box a.btn {
+.btn-box .btn {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -226,12 +244,12 @@ section {
     border: 2px solid var(--hover-color);
 }
 
-a.btn:hover {
+.btn:hover {
     color: var(--hover-color);
 
 }
 
-a.btn::before {
+.btn::before {
     content: "";
     position: absolute;
     top: 0;
@@ -244,23 +262,23 @@ a.btn::before {
 
 }
 
-a.btn:hover::before {
+.btn:hover::before {
     width: 100%;
 
 }
 
-a.btn:nth-child(2) {
+.btn:nth-child(2) {
     background: var(--bg-color);
     color: var(--hover-color);
 
 }
 
-a.btn:nth-child(2):hover {
+.btn:nth-child(2):hover {
     color: var(--bg-color);
 
 }
 
-a.btn:nth-child(2)::before {
+.btn:nth-child(2)::before {
     background: var(--hover-color);
 }
 
@@ -328,7 +346,7 @@ a.btn:nth-child(2)::before {
 
 .img-box img {
     width: 100%;
-    max-width: 350px;
+    max-width: 380px;/*altera a img de perfil*/
     height: auto;
 
 }
@@ -795,18 +813,87 @@ a.btn:nth-child(2)::before {
 
 }
 
+/*Contato section css ------------------------------------------------------------------------------------*/
+.contact{
+background: var(--secon-bg-color);
+width: 100%;
+
+}
+
+.contact form{
+text-align: center;
+max-width: 50rem;
+margin: 1rem auto;
+margin-bottom: rem;
+
+}
+
+.contact form input{
+height: 3rem;
+width: 100%;
+
+}
+
+.contact form input,
+.contact form textarea{
+width: 100%;
+color: var(--text-color);
+background: var(--bg-color);
+margin-bottom: .8rem;
+border: none;
+border-radius: .5rem;
+
+}
+
+.contact form textarea{
+resize: none;
+
+}
 
 
 
-/*1:30*/
+.formBtn{
+display: flex;
+justify-content: center;
+width: 100%;
+
+}
+
+.formBtn .btn{
+cursor: pointer;
+font-size: 1rem;
+
+}
 
 
+/*footer CSS*/
+footer{
+padding: 1.5rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
 
+}
 
+footer p{
+color: #bdbdbd;
 
+}
 
+footer a{
+display: inline-flex;
+justify-content: center;
+color: var(--text-color);
+padding: .6rem;
+border-radius: 5px;
 
+}
 
+footer a i{
+    font-size: 1.5rem;
+color: var(--secon-bg-color);
+
+}
 
 
 
