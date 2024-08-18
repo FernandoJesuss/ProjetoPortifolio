@@ -15,12 +15,12 @@
     <header>
         <div class="logo"><span>F</span>ernando.</div>
         <ul class="navlist">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#Sobre">Sobre</a></li>
-            <li><a href="#serviços">serviços</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li><a href="#Contato">Contato</a></li>
+            <li><a href="#home" style="--i:1;">Home</a></li>
+            <li><a href="#Sobre"style="--i:2;">Sobre</a></li>
+            <li><a href="#serviços" style="--i:3;">serviços</a></li>
+            <li><a href="#Skills" style="--i:4;">Skills</a></li>
+            <li><a href="#Portfolio" style="--i:5;">Portfolio</a></li>
+            <li><a href="#Contato" style="--i:6;">Contato</a></li>
         </ul>
 
         <div id="menu-icon" class=" bx bx-menu"></div>
@@ -28,7 +28,7 @@
     </header>
     <!-- home section --------------------------------------------------------------------------------------->
     <section id="home" class="home">
-        <div class="home-content">
+        <div class="home-content scroll-scale">
             <h1>Olá! Eu sou Fernando Santos</h1>
             <div class="change-text">
                 <h3>E eu sou</h3>
@@ -74,7 +74,7 @@
 
         </div>
 
-        <div class="home-image">
+        <div class="home-image scroll-scale">
             <div class="img-box">
                 <img src="./img/perfil.png" alt="">
             </div>
@@ -147,7 +147,7 @@
     <!-- Sobre Section ------------------------------------------------------------------------------------------>
 
     <section id="Sobre" class="about">
-        <div class="img-about">
+        <div class="img-about scroll-scale">
             <img src="./img/perfil.png" alt="Sobre">
             <div class="info-about1">
                 <span>7</span>
@@ -165,7 +165,7 @@
             </div>
         </div>
 
-        <div class="about-content">
+        <div class="about-content scroll-scale">
             <span>Deixe-me apresentar</span>
             <h2>Sobre mim</h2>
             <h3>Uma história de bem</h3>
@@ -184,12 +184,12 @@
 
     <!-- Serviços section --------------------------------------------------------------------------------------->
     <section id="serviços" class="services">
-        <div class="main-text">
+        <div class="main-text scroll-scale">
             <span>o que eu farei por você</span>
             <h2>Nossos Serviços</h2>
         </div>
 
-        <div class="section-services">
+        <div class="section-services scroll-bottom">
             <div class="service-box">
 
                 <i class="bx bxs-layer service-icon"></i>
@@ -240,13 +240,13 @@
 
     <!-- Skill section --------------------------------------------------------------------------------------->
     <section id="Skills" class="skills">
-        <div class="main-text">
+        <div class="main-text scroll-scale">
             <span>técnico e profissional</span>
             <h2>Minhas habilidades</h2>
         </div>
 
         <div class="skill-main">
-            <div class="skill-left">
+            <div class="skill-left scroll-scale">
                 <h3>habilidades técnicas</h3>
                 <!--------------------------------------------------------------------------------------------------->
                 <div class="skill-bar">
@@ -299,7 +299,7 @@
 
             <!-- Skill-right---------- --------------------------------------------------------------------------------------->
 
-            <div class="skill-right">
+            <div class="skill-right scroll-scale">
                 <h3>Habilidades Profissional</h3>
                 <div class="professional">
                     <div class="box">
@@ -339,22 +339,22 @@
 
     </section>
 
-    <!-- skill section --------------------------------------------------------------------------------------->
+    <!-- skill Portfolio section --------------------------------------------------------------------------------------->
     <section id="Portfolio" class="portfoloio">
-        <div class="main-text">
+        <div class="main-text scroll-scale">
             <span>O que eu farei por você</span>
             <h2>Últimos Projetos</h2>
         </div>
 
         <div class="container">
-            <div class="fillter-buttons">
-                <button class="btn" data-filter=".todos">Todos</button>
-                <button class="btn" data-filter=".produtos">Produtos</button>
-                <button class="btn" data-filter=".inter">Interagindo</button>
-                <button class="btn" data-filter=".web">Web App</button>
+            <div class="fillter-buttons scroll-scale">
+                <button class="button" data-filter=".todos">Todos</button>
+                <button class="button" data-filter=".produtos">Produtos</button>
+                <button class="button" data-filter=".inter">Interagindo</button>
+                <button class="button" data-filter=".web">Web App</button>
             </div>
 
-            <div class="portfolio-gallery">
+            <div class="portfolio-gallery scroll-bottom">
                 <div class="port-box mix produtos todos">
                     <div class="port-image">
                         <img src="./img/tbl.png" alt="">
@@ -440,12 +440,12 @@
 
     <!-- Contato section --------------------------------------------------------------------------------------->
     <section id="Contato" class="contact">
-        <div class="main-text">
+        <div class="main-text scroll-scale">
             <span>FAÇA-ME UMA PERGUNTA</span>
             <h2>Contate-Me</h2>
         </div>
 
-        <form action="#menu-icon">
+        <form action="#menu-icon" class="scroll-bottom">
             <input type="text" placeholder="&nbsp;Seu nome">
             <input type="text" placeholder="&nbsp;Seu Email">
             <input type="text" placeholder="&nbsp;Seu Endereço">
@@ -459,7 +459,7 @@
 
 <!-- footer website -->
 <footer>
-<p>Copyright &copy; 2024 by ParsCoder || Todos os direitos reservados</p>
+<p class="scroll-scale">Copyright &copy; 2024 by ParsCoder || Todos os direitos reservados</p>
 <a href="#home"><i class="bx bxs-chevrons-up"></i></a>
 </footer>
 

@@ -45,7 +45,6 @@
     background: var(--hover-color);
     border-radius: 5rem;
 
-
 }
 
 body {
@@ -78,15 +77,6 @@ header .sticky {
 
 }
 
-
-
-
-
-
-
-
-
-
 .logo {
     font-size: 26px;
     font-weight: 700;
@@ -105,16 +95,18 @@ span {
 }
 
 .navlist a {
+    display: inline-block;
     color: var(--text-color);
     font-weight: 500;
     padding: 10px 20px;
+    animation: slideAnimation 1s ease forwards;
+    animation-delay: calc(.3s * var(--i));
+    opacity: 0;
 
 }
 
 .navlist a:hover {
-
     color: var(--hover-color);
-
     text-shadow: 0 0 10px rgba(18, 247, 255, 0.6),
         0 0 20px rgba(18, 247, 255, 0.6),
         0 0 30px rgba(18, 247, 255, 0.6),
@@ -129,21 +121,7 @@ span {
 .navlist a.active {
     color: var(--hover-color);
 
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
 
 #menu-icon {
     font-size: 1.8rem;
@@ -245,7 +223,6 @@ section {
 }
 
 .info-box h5 {
-
     font-weight: 600;
     color: var(--text-color);
     font-size: 1rem;
@@ -607,8 +584,6 @@ section {
 
 }
 
-
-
 .skill-main h3 {
     margin-bottom: 2rem;
     font-size: var(--normal-font);
@@ -702,7 +677,6 @@ section {
     display: block;
     font-weight: 600;
 
-
 }
 
 .circle {
@@ -738,7 +712,7 @@ section {
 
 }
 
-.fillter-buttons .btn {
+.fillter-buttons .button {
     background: none;
     outline: none;
     /*1:23*/
@@ -752,7 +726,7 @@ section {
 
 }
 
-.fillter-buttons .btn:hover {
+.fillter-buttons .button:hover {
     color: var(--hover-color);
 
 }
@@ -822,9 +796,6 @@ section {
 
 }
 
-
-
-
 .port-content h3 {
     font-size: 1.5rem;
     font-weight: 600;
@@ -893,8 +864,6 @@ section {
 
 }
 
-
-
 .formBtn {
     display: flex;
     justify-content: center;
@@ -907,7 +876,6 @@ section {
     font-size: 1rem;
 
 }
-
 
 /*footer CSS*/
 footer {
@@ -938,21 +906,34 @@ footer a i {
 
 }
 
+/*parallax--------------------------------------------------------------------------*/
 
+.scroll-scale {
+    opacity: 0;
+    transform: scale(.9);
+    transition: all 2s;
 
+}
 
+.scroll-bottom {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 3s;
 
+}
 
+.scroll-top {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 3s;
 
+}
 
+.show-items {
+    opacity: 1;
+    transform: translateX(0);
 
-
-
-
-
-
-
-
+}
 
 /*Keyframes --------------------------------------------------------------------------*/
 @keyframes morph {
@@ -1019,18 +1000,26 @@ footer a i {
 
 }
 
-
 @keyframes glow {
     0% {
         background: var(--bg-color);
         box-shadow: none;
-
     }
-
     100% {
         background: var(--hover-color);
         box-shadow: var(--neon-box-shadow);
+    }
 
+}
+
+@keyframes slideAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 
 }
@@ -1143,41 +1132,42 @@ footer a i {
         margin: 2.5rem;
 
     }
-footer p{
-    font-size: .8rem;
-}
-.info-about1, .info-about2, .info-about3{
-    display: none;/*some com a informação sobre flutuantes*/
 
+    footer p {
+        font-size: .8rem;
     }
 
 }
 
-@media(max-width:420px){
-html{
-font-size: 80%;
+@media(max-width:420px) {
+    html {
+        font-size: 80%;
 
-}
+    }
 
-footer p{
-    font-size: .6rem;
-}
-.fillter-buttons .btn{
-font-size: .8rem;
+    footer p {
+        font-size: .6rem;
+    }
 
-}
-.img-about img{
-width: 300px;
+    .fillter-buttons .button {
+        font-size: .8rem;
 
-}
-.info-about1, .info-about2, .info-about3{
-display: none;
+    }
 
+    .img-about img {
+        width: 300px;
 
-}
-.img-about p{
-font-size: 1rem;
+    }
 
-}
+    .info-about1,
+    .info-about2,
+    .info-about3 {
+        display: none;
+    }
+
+    .img-about p {
+        font-size: 1rem;
+
+    }
 
 }
