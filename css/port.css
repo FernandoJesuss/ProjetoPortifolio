@@ -158,9 +158,10 @@ section {
 }
 
 .home-content h1 {
-    font-size: var(--big-font);
+    /* font-size: var(--big-font); */
     font-weight: 700;
-
+    font-size: 50px;
+    
 }
 
 .change-text {
@@ -218,11 +219,9 @@ section {
 }
 
 .change-text h3 .word .letter .behind {
-    /*behance olhar no html para se esta correto*/
-
     transform: rotateX(-90deg);
 
-} 
+}
 
 .home-content p {
     line-height: 1.6;
@@ -523,8 +522,7 @@ section {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    /*area grid-gap mais essa tag foi descontinuada*/
-
+    
 }
 
 .section-services .service-box {
@@ -578,7 +576,7 @@ section {
 
 }
 
-/*services  skillcss ------------------------------------------------------------------------------------*/
+/*services  skill css ------------------------------------------------------------------------------------*/
 .skills {
     background: var(--secon-bg-color);
 
@@ -589,9 +587,7 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 30px;
-    /*grid-row-gap foi descontinuada so e usado agora o gap por tem o mesmo efeito*/
     grid-column: 50px;
-    /*grid-column-gap foi descontinuada so e usado agora o gap por tem o mesmo efeito*/
 
 }
 
@@ -603,13 +599,11 @@ section {
 .skill-main h3 {
     margin-bottom: 2rem;
     font-size: var(--normal-font);
-    /*erro*/
     text-align: center;
 }
 
 .skill-left .skill-bar .info {
     display: flex;
-    /*era display flex eu troquei para grid*/
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
@@ -1040,7 +1034,7 @@ footer a i {
 
 }
 
-/*pontos de interrupção*/
+/*Responsividade*/
 
 @media(max-width:991px) {
 
@@ -1059,6 +1053,12 @@ footer a i {
 
     .navlist a {
         padding: 8px 15px;
+    }
+
+    .word{
+
+font-size: 1.6rem;
+
     }
 
     :root {
@@ -1080,8 +1080,6 @@ footer a i {
         margin-top: 2rem;
     }
 }
-
-
 
 .portfolio-gallery{
 transform: translateX(-10px);
@@ -1123,6 +1121,12 @@ transform: translateX(-10px);
         top: 100%;
 
     }
+
+    .word{
+
+        font-size: 1.4rem;
+        
+            }
 
     .home {
         grid-template-columns: 1fr;
