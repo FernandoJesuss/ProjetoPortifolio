@@ -631,6 +631,16 @@ section {
 
 }
 
+.skill-bar .bar .aws {
+    width: 15%;
+    animation: aws 2s;
+}
+
+.skill-bar .bar .microsoft-azure {
+    width: 25%;
+    animation: microsoft 2s;
+}
+
 .skill-bar .bar .html {
     width: 72%;
     animation: html 2s;
@@ -963,6 +973,24 @@ footer a i {
 
     80% {
         border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    }
+}
+
+@keyframes aws{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 12%;
+    }
+}
+
+@keyframes microsoft-azure{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 12%;
     }
 }
 
