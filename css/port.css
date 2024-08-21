@@ -67,7 +67,7 @@ header {
     justify-content: space-between;
     padding: 20px 10%;
     width: 100%;
-
+    /* height: 6rem; */
 }
 
 header .sticky {
@@ -76,6 +76,114 @@ header .sticky {
     padding: 12px 10%;
 
 }
+
+/*troca de idioma*/
+
+ .language {
+    position: relative;
+    width: 120px;
+    margin-top: 10px;
+    font-weight: bold;
+    /* opacity: 0; */
+    animation: slideLeft 1.5s ease forwards;
+    animation-delay: 1s;
+}
+.language .language-selected {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+.language .language-selected:before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../icone/us.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+/* JQUERY CLASS */
+.language-selected.change-en:before {
+    background-image: url(../icone/us.png);
+}
+.language-selected.change-br:before {
+    background-image: url(../icone/br.png);
+}
+
+.language ul {
+    position: absolute;
+    width: 150px;
+    /* background-color: #fff; */
+    /* border: 1px solid #f8f8f8; */
+    padding: 25px 0px;
+    /* box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5); */
+    display: none;
+    border: none;
+}
+.language ul li {
+    list-style: none;
+}
+.language ul li a {
+    display: block;
+    text-decoration: none;
+    /* color: #445964; */
+    padding: 5px 10px;
+    color: #fff;
+}
+.language ul li a:hover {
+    /* background-color:var(--hover-color); */
+    color: var(--hover-color);
+    text-shadow: 0 0 10px rgba(18, 247, 255, 0.6),
+        0 0 20px rgba(18, 247, 255, 0.6),
+        0 0 30px rgba(18, 247, 255, 0.6),
+        0 0 40px rgba(18, 247, 255, 0.6),
+        0 0 70px rgba(18, 247, 255, 0.6),
+        0 0 80px rgba(18, 247, 255, 0.6),
+        0 0 100px rgba(18, 247, 255, 0.6),
+        0 0 150px rgba(18, 247, 255, 0.6);
+
+
+}
+.language ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../icone/us.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.language a.en:before {
+    background-image: url(../icone/us.png);
+}
+.language a.br:before {
+    background-image: url(../icone/br.png);
+}
+.language:hover ul {
+    display: block;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .logo {
     font-size: 26px;

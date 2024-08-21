@@ -25,7 +25,20 @@
 
         <div id="menu-icon" class=" bx bx-menu"></div>
 
+<!----------------- Muda o idioma ---------------------------------------------------------------------->
+        
+            <div class="language">
+               <div class="language-selected">
+                   en-US
+               </div>
+               <ul>
+                   <li><a href="#" class="en">English</a></li>
+                   <li><a href="#" class="br">Português</a></li>
+               </ul>
+           </div>           
+
     </header>
+
     <!-- home section --------------------------------------------------------------------------------------->
     <section id="home" class="home">
         <div class="home-content scroll-scale">
@@ -260,12 +273,12 @@
 
         <div class="skill-main">
             <div class="skill-left scroll-scale">
-                <h3>habilidades técnicas</h3>
+                <h3>Habilidades técnicas</h3>
                 <!--------------------------------------------------------------------------------------------------->
                 <div class="skill-bar">
                     <div class="info">
-                        <p>AWS</p>
-                        <p>15%</p>
+                        <p data-descSkill="skill1">AWS</p>
+                        <p data-descSkill="skill2">15%</p>
                     </div>
 
                     <div class="bar">
@@ -493,6 +506,9 @@
 
     <script src="./javascript/mixitup.min.js"></script>
     <script src="./javascript/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./javascript/br.js"></script>
+    <script src="./javascript/us.js"></script>
 </body>
 
 </html>
