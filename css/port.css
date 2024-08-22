@@ -571,7 +571,7 @@ filter: drop-shadow(0 0 20px #12f7ff);
     max-width: 400px;
     height: auto;
     filter: drop-shadow(5px 15px 15px hsla(179, 99%, 48%, 0.952));
-
+    margin-right: 1.2rem;
 }
 
 .about-content span {
@@ -601,7 +601,7 @@ filter: drop-shadow(0 0 20px #12f7ff);
     color: #fdfdfd;
     font-weight: 300;
     margin-bottom: 1.5rem;
-
+    
 }
 
 .info-about1,
