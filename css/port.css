@@ -424,8 +424,49 @@ section {
     background: var(--hover-color);
 }
 
+
+
+
+.certificado {
+margin-left: 0;
+margin-top: 20px;
+
+}
+
+
+.insignia{
+width: 6rem;
+margin:  2%;
+justify-content: center;
+align-items: center;
+display: inline-block;
+position: relative;
+left: -25px;
+
+
+
+
+
+filter: drop-shadow(0 0 20px #12f7ff);
+
+}
+
+.certificado a .insignia:hover{
+    transform: translateY(-.7rem);
+
+}
+
+
+
+
+
+
+
+
+
+
 .social-icons {
-    margin-top: 8rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
     width: 220px;
@@ -491,6 +532,10 @@ section {
     max-width: 380px;
     /*altera a img de perfil*/
     height: auto;
+    margin-bottom: 190px;
+
+    filter: drop-shadow(5px 5px 5px hsl(0deg 0% 0% / 0.5));
+    /* filter: drop-shadow(5px 5px 5px hsla(179, 99%, 48%, 0.952)); */
 
 }
 
@@ -499,7 +544,7 @@ section {
     width: 100%;
     height: 100%;
     z-index: -1;
-    top: -25%;
+    top: -13%;
 
 }
 
@@ -525,6 +570,7 @@ section {
 .about .img-about img {
     max-width: 400px;
     height: auto;
+    filter: drop-shadow(5px 15px 15px hsla(179, 99%, 48%, 0.952));
 
 }
 
@@ -1212,8 +1258,89 @@ font-size: 1.6rem;
         margin-top: 5rem;
     }
 
+
+
+
+
+
+
+
+
+    .home-image {
+        position: relative;
+    
+    }
+    
+    .img-box {
+        text-align: center;
+    
+    }
+    
+    .img-box img {
+        width: 100%;
+        max-width: 300px;
+        /*altera a img de perfil*/
+        height: auto;
+        margin-bottom: 190px;
+    
+    }
+
+.liquid-shape {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: -13%;
+
+}
+
+.liquid-shape:nth-child(2) {
+    filter: blur(100px);
+}
+
+
+
+
+
+
+
+    .certificado {
+        margin-left: 0;
+        margin-top: 20px;
+
+        }
+
+        .certificado h3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .insignia{
+        width: 4.8rem;
+        margin:  2%;
+        justify-content: center;
+        align-items: center;
+        display: inline-block;
+        position: relative;
+        left: 15px;
+        
+        }
+        
+        .certificado a .insignia:hover{
+            transform: translateY(-.7rem);
+        
+        }
+
+
+        
+
+
     .social-icons {
         margin-top: 2rem;
+         margin: 0 auto;
+         margin-top: 30px;
+           
     }
 }
 
