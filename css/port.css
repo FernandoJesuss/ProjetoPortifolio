@@ -189,6 +189,7 @@ header .sticky {
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 1px;
+    cursor: pointer;
 
 }
 
@@ -624,13 +625,13 @@ filter: drop-shadow(0 0 20px #12f7ff);
 }
 
 .info-about1 {
-    left: 10%;
-    top: 34%;
+    left: 1%;
+    top: 23%;
 }
 
 .info-about2 {
     left: 66%;
-    top: 70%;
+    top: 60%;
 }
 
 .img-about3 {
@@ -907,10 +908,25 @@ filter: drop-shadow(0 0 20px #12f7ff);
 
 .portfolio-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: 2rem;
 
 }
+
+.nitro {
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre as imagens */
+    
+}
+.imagem {
+    margin: 10px; /* Espaçamento entre as imagens */
+    width: 25px;
+    margin-top: 20px;
+}
+
+
+
+
 
 .port-box {
     position: relative;
@@ -922,6 +938,9 @@ filter: drop-shadow(0 0 20px #12f7ff);
     align-items: center;
     border: 2px solid var(--hover-color);
     box-shadow: var(--neon-box-shadow);
+/* max-width: 80%;
+max-height:80%; */
+
 
 }
 
