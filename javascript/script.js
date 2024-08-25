@@ -158,3 +158,37 @@ function toSend() {
 
 
 
+// Função para abrir o modal
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.display = "block";
+}
+
+// Função para fechar o modal
+function closeModal(modal) {
+    modal.style.display = "none";
+}
+
+// Adiciona eventos aos botões "Leia Mais"
+document.querySelectorAll("button[data-modal]").forEach(button => {
+    button.onclick = function() {
+        const modalId = this.getAttribute('data-modal');
+        openModal(modalId);
+    };
+});
+
+// Adiciona eventos de fechamento ao botão de fechar e ao clicar fora do modal
+document.querySelectorAll('.close').forEach(span => {
+    span.onclick = function() {
+        closeModal(this.closest('.modal'));
+    };
+});
+
+window.onclick = function(event) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        if (event.target === modal) {
+            closeModal(modal);
+        }
+    });
+};
