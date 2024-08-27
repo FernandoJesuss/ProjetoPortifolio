@@ -136,28 +136,6 @@ scrollBottom.forEach((el) => observer.observe(el));
 scrollTop.forEach((el) => observer.observe(el));
 
 
-/*>>>>>>>>>>>>>>>>>RESET FORM APÓS ENVIO DE FORMULÁRIO<<<<<<<<<<<<<<<<< */
-
-const inputName = document.querySelector("#input-name")
-const inputMail = document.querySelector("#input-mail")
-const inputTel = document.querySelector("#input-tel")
-const inputMessage = document.querySelector("#input-message")
-
-function toSend() {
-    setTimeout(() => {
-    inputName.value = ""
-    inputMail.value = ""
-    inputTel.value = ""
-    inputMessage.value = ""
-    }, 4000);
-
-}
-
-
-
-
-
-
 // Função para abrir o modal
 function openModal(modalId) {
     const modal = document.getElementById(modalId);
@@ -192,3 +170,23 @@ window.onclick = function(event) {
         }
     });
 };
+
+
+
+
+/*>>>>>>>>>>>>>>>>>RESET FORM APÓS ENVIO DE FORMULÁRIO<<<<<<<<<<<<<<<<< */
+
+// const inputName = document.querySelector("#input-name")
+// const inputMail = document.querySelector("#input-mail")
+// //const inputTel = document.querySelector("#input-tel")
+// const inputMessage = document.querySelector("#input-message")
+
+// function toSend() {
+//     setTimeout(() => {
+//     inputName.value = ""
+//     inputMail.value = ""
+//     inputTel.value = ""
+//     inputMessage.value = ""
+//     }, 4000);
+
+// }
