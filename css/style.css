@@ -559,9 +559,25 @@ h6 {
     height: auto;
     margin-bottom: 190px;
     filter: drop-shadow(5px 5px 5px hsl(0deg 0% 0% / 0.5));
-    /* filter: drop-shadow(5px 5px 5px hsla(179, 99%, 48%, 0.952)); */
+    filter: drop-shadow(5px 5px 5px hsla(179, 99%, 48%, 0.952));
 
 }
+
+.foto {
+
+  border-radius: 12rem;
+  
+    border: 1px solid rgba(0, 0, 0, 0.5);
+/* border: 1px solid; */
+position: relative;
+top: 5rem;
+filter: drop-shadow(5px 5px 5px hsla(179, 99%, 48%, 0.952));
+}
+
+
+
+
+/*Liquid-shap atras da imagem de perfil*/
 
 .liquid-shape {
     position: absolute;
