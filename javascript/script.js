@@ -44,7 +44,7 @@ let changeText = () => {
 changeText();
 setInterval(changeText, 3000);
 
-//circle skill//////////////////////////////////////////////////////////////////////////////////////////
+//circle skill
 
 const circles = document.querySelectorAll(".circle");
 circles.forEach(elem => {
@@ -149,7 +149,7 @@ function closeModal(modal) {
 
 // Adiciona eventos aos botões "Leia Mais"
 document.querySelectorAll("button[data-modal]").forEach(button => {
-    button.onclick = function() {
+    button.onclick = function () {
         const modalId = this.getAttribute('data-modal');
         openModal(modalId);
     };
@@ -157,12 +157,12 @@ document.querySelectorAll("button[data-modal]").forEach(button => {
 
 // Adiciona eventos de fechamento ao botão de fechar e ao clicar fora do modal
 document.querySelectorAll('.close').forEach(span => {
-    span.onclick = function() {
+    span.onclick = function () {
         closeModal(this.closest('.modal'));
     };
 });
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     const modals = document.querySelectorAll('.modal');
     modals.forEach(modal => {
         if (event.target === modal) {
@@ -174,19 +174,3 @@ window.onclick = function(event) {
 
 
 
-/*>>>>>>>>>>>>>>>>>RESET FORM APÓS ENVIO DE FORMULÁRIO<<<<<<<<<<<<<<<<< */
-
-// const inputName = document.querySelector("#input-name")
-// const inputMail = document.querySelector("#input-mail")
-// //const inputTel = document.querySelector("#input-tel")
-// const inputMessage = document.querySelector("#input-message")
-
-// function toSend() {
-//     setTimeout(() => {
-//     inputName.value = ""
-//     inputMail.value = ""
-//     inputTel.value = ""
-//     inputMessage.value = ""
-//     }, 4000);
-
-// }
