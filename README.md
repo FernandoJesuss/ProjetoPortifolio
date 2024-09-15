@@ -21,13 +21,9 @@
 - [Como me Contatar](#como-me-contatar)
   
 
-
-
 ## Sobre Mim
 Olá! Eu sou Fernando Santos, um desenvolvedor Frontend com formação em Sistemas de Informação. Tenho uma forte paixão por design e usabilidade, sempre buscando melhorar minhas habilidades e oferecer soluções criativas e eficientes.
 <br>
-
-
 
 ## Habilidades 
 
@@ -54,7 +50,11 @@ Olá! Eu sou Fernando Santos, um desenvolvedor Frontend com formação em Sistem
 | Trabalho em Equipe  | 90%   |
 | Criatividade        | 65%   |
 | Comunicação         | 50%   |
-| Empatia             | 70%   |
+| Projetos            | 30%   |
+| Adaptabilidade      | 80%   |
+| Mentoria            | 70%   |
+| Gestão de Tempo     | 85%   |
+
 
 </td>
 </tr>
@@ -75,25 +75,11 @@ Aqui estão alguns dos meus projetos mais recentes:
 <br>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Como me Contatar
 Estou sempre aberto a novas oportunidades e colaborações! Você pode me encontrar nas seguintes plataformas:
-- [LinkedIn](link-para-o-linkedin)
-- [Email](mailto:seuemail@example.com)
-- [GitHub](link-para-o-github)
+- [LinkedIn](https://www.linkedin.com/in/fernando-santos-jesus/)
+- [Email](mailto:fernandobcl@yahoo.com.br)
+- [GitHub](https://github.com/FernandoJesuss)
   
 <br>
 
