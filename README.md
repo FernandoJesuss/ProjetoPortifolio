@@ -84,8 +84,8 @@ Estou sempre aberto a novas oportunidades e colaborações! Você pode me encont
 <br>
 
 ## Licença
-Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para detalhes.
-[![NPM](https://img.shields.io/nmpdd
+Este projeto está licenciado sob a MIT License - veja o arquivo para detalhes.
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/FernandoJesuss/ProjetoPortifolio/blob/main/LICENSE)
 
 
 
