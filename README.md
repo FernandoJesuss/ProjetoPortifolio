@@ -16,7 +16,7 @@
 
 ## Tabela de Conteúdos
 - [Sobre Mim](#sobre-mim)
-- [Habilidades](habilidades)
+- [Habilidades](#habilidades)
 - [Projetos](#projetos)
 - [Como me Contatar](#como-me-contatar)
   
