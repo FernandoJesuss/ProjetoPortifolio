@@ -29,7 +29,7 @@ Olá! Eu sou Fernando Santos, um desenvolvedor Frontend com formação em Sistem
 
 
 
-<h2 align="center">Habilidades </h2><br>
+## Habilidades 
 
 <table align="center">
   <tr>
