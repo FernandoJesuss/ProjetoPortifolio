@@ -43,7 +43,7 @@ Olá! Eu sou Fernando Santos, um desenvolvedor Frontend com formação em Sistem
 | JavaScript     | 10%   |
 | Figma          | 35%   |
 | AWS            | 15%   |
-| Azure          | 22%   |
+| Azure          | 25%   |
 
 </td>
 <td>
@@ -66,9 +66,9 @@ Olá! Eu sou Fernando Santos, um desenvolvedor Frontend com formação em Sistem
  ## Projetos
 Aqui estão alguns dos meus projetos mais recentes:
 
-- **[Conversor de Moedas](link-para-o-projeto)**: Um aplicativo que permite a conversão de diferentes moedas em tempo real.
-- **[Craques da Várzea](link-para-o-projeto)**: Uma plataforma que reúne informações sobre jogadores de futebol amador.
-- **[DevSorteio](link-para-o-projeto)**: Um sorteio online para eventos e promoções.
+- **[Conversor de Moedas](https://fernandojesuss.github.io/Conversor_Moedas/)**: Um aplicativo que permite a conversão de diferentes moedas em tempo real.
+- **[Craques da Várzea](https://galeria-de-fotos-sooty.vercel.app/)**: Uma plataforma que reúne informações sobre jogadores de futebol amador.
+- **[DevSorteio](https://fernandojesuss.github.io/Dev_Sorteio/)**: Um sorteio online para eventos e promoções.
 
   
 
