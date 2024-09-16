@@ -14,6 +14,19 @@
 
 <br>
 
+# Tecnologias Utilizadas
+## Front end
+- JavaScript
+- HTML
+- CSS
+
+  # Implantação em produção
+  - Front end: GitHub
+
+    <br>
+
+<br>
+
 ## Tabela de Conteúdos
 - [Sobre Mim](#sobre-mim)
 - [Habilidades](#habilidades)
@@ -89,7 +102,9 @@ Este projeto está licenciado sob a MIT License - veja o arquivo para detalhes.
 
 
 
+# Autor 
 
+### Fernando Santos
 
 
 
