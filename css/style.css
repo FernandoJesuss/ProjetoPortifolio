@@ -851,7 +851,7 @@ h4 {
 }
 
 .skill-bar .bar .javascript {
-    width: 10%;
+    width: 20%;
     animation: javascript 4s;
 }
 
@@ -859,6 +859,38 @@ h4 {
     width: 40%;
     animation: css 5s;
 }
+
+.skill-bar .bar .github {
+    width: 60%;
+    animation: github 5s;
+}
+
+.skill-bar .bar .mongodb {
+    width: 10%;
+    animation: mongodb 5s;
+}
+
+.skill-bar .bar .typescript {
+    width: 10%;
+    animation: typescript 5s;
+}
+
+
+
+.skill-bar .bar .react {
+    width: 10%;
+    animation: react 5s;
+}
+
+
+.skill-bar .bar .node {
+    width: 10%;
+    animation: node 5s;
+}
+
+
+
+
 
 /*skill right */
 .professional {
@@ -1309,6 +1341,68 @@ footer a i {
     }
 
 }
+
+@keyframes github {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
+    }
+
+}
+
+@keyframes mongodb {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
+    }
+
+}
+
+@keyframes typescript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
+    }
+
+}
+
+@keyframes node {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
+    }
+
+}
+
+
+
+
+
+@keyframes react {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
+    }
+
+}
+
+
+
 
 @keyframes glow {
     0% {
