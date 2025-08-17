@@ -7,7 +7,7 @@
 
 <br>
 
-[**Acesse o Portfólio**](https://fernandojesuss.github.io/ProjetoPortifolio/)
+[**Acesse o Portfólio**](https://projeto-porttfolio.netlify.app/)
 
 ![Portfólio](https://github.com/user-attachments/assets/a8237736-418d-4d28-bc1c-9e4c241f8bb3)
 
