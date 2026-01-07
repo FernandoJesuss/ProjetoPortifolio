@@ -78,6 +78,16 @@ header .sticky {
 
 }
 
+
+/* PARTICLES */
+#particles-js {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+
 .logo {
     font-size: 26px;
     font-weight: 700;
@@ -1657,3 +1667,20 @@ footer a i {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
