@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/rl.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
       <!-- Icons -->
@@ -443,18 +444,175 @@
         </div>
     </section>
 
+
+
+
     <!----------Habilidades Skill section ---------------------------------------------------------------------------------->
     <section id="Skills" class="skills">
         <div class="main-text scroll-scale">
             <span>técnico e profissional</span>
             <h2>Minhas Habilidades</h2>
         </div>
-
+<!-- 
         <div class="skill-main">
             <div class="skill-left scroll-scale">
-                <h3>Habilidades Técnicas</h3>
+                <h3>Habilidades Técnicas</h3> -->
+
+
+
+
+
+
+
+<!-- -->
+
+ <div class="container">
+
+        <div class="watch-wrapper">            
+
+            <div class="watch-frame hard-skills">
+
+                <div class="watch-face">
+
+                    <div class="time-display">
+
+                        <div class="time" id="time1"></div>
+                        <div class="watch-title">Hard Skills</div>
+                    </div>
+
+                    <img class="rl" src="./Img/relogio.png" alt="hard-skills">
+
+                    <div class="carousel-container">
+                        <div class="carousel-items" id="hardSkillsCarousel"></div>
+                        <button class="nav-btn prev" onclick="navigate('hard', -1)">
+                            <svg viewBox="0 0 24 24">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <button class="nav-btn next" onclick="navigate('hard', 1)">
+                            <svg viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="dots-indicator" id="hardDots"></div>
+                </div>
+            </div>
+           
+        </div>
+
+        <div class="watch-wrapper">
+           
+            <div class="watch-frame soft-skills">
+                <div class="watch-face">
+                    <div class="time-display">
+                        <div class="time" id="time2"></div>
+                        <div class="watch-title">Soft Skills</div>
+                    </div>
+
+                    <img class="rl" src="./Img/relogioone.png" alt="Soft-skills">
+
+
+                    <div class="carousel-container">
+                        <div class="carousel-items" id="softSkillsCarousel"></div>
+                        <button class="nav-btn prev" onclick="navigate('soft', -1)">
+                            <svg viewBox="0 0 24 24">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <button class="nav-btn next" onclick="navigate('soft', 1)">
+                            <svg viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="dots-indicator" id="softDots"></div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="watch-wrapper">
+            
+            <div class="watch-frame hobbies">
+                <div class="watch-face">
+                    <div class="time-display">
+                        <div class="time" id="time3"></div>
+                        <div class="watch-title">Hobbies</div>
+                    </div>
+
+                    <img class="rl" src="./Img/relogiotwo.png" alt="Hobbies">
+
+                    <div class="carousel-container" >
+                        <div class="carousel-items" id="hobbiesCarousel"></div>
+                        <button class="nav-btn prev" onclick="navigate('hobby', -1)">
+                            <svg viewBox="0 0 24 24">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <button class="nav-btn next" onclick="navigate('hobby', 1)">
+                            <svg viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="dots-indicator" id="hobbyDots"></div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+<button class="global-control" id="globalControl" onclick="toggleAutoPlay()">
+        ⏸️ Pausar Todos
+    </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+<!----->
+
+<!-- <div class="watch-wrapper">
+    <img src="./img/relogio.png" class="watch-img">
+
+    <div class="watch-frame">
+        <div class="carousel-container">
+            <div class="skill-card green">
+                <span class="time">14:37</span>
+                <h4>Node.js</h4>
+            </div>
+        </div>
+
+        <button class="nav-btn prev">‹</button>
+        <button class="nav-btn next">›</button>
+    </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
                 <!--------------------------------------------------------------------------------------------------->
-                <div class="skill-bar">
+                <!-- <div class="skill-bar">
                     <div class="info">
                         <p data-descSkill="skill1">TypeScript.js</p>
                         <p data-descSkill="skill2">10%</p>
@@ -463,10 +621,10 @@
                     <div class="bar">
                         <span class="typescript"></span>
                     </div>
-                </div>
+                </div> -->
 
                 <!--------------------------------------------------------------------------------------------------->
-                <div class="skill-bar">
+                <!-- <div class="skill-bar">
                     <div class="info">
                         <p data-descSkill="skill1">Node.js</p>
                         <p data-descSkill="skill2">10%</p>
@@ -475,10 +633,10 @@
                     <div class="bar">
                         <span class="node"></span>
                     </div>
-                </div>
+                </div> -->
 
                 <!--------------------------------------------------------------------------------------------------->
-                <div class="skill-bar">
+                <!-- <div class="skill-bar">
                     <div class="info">
                         <p data-descSkill="skill1">React.js</p>
                         <p data-descSkill="skill2">10%</p>
@@ -487,11 +645,11 @@
                     <div class="bar">
                         <span class="react"></span>
                     </div>
-                </div>
+                </div> -->
 
                 <!--------------------------------------------------------------------------------------------------->
                 <!--------------------------------------------------------------------------------------------------->
-                <div class="skill-bar">
+                <!-- <div class="skill-bar">
                     <div class="info">
                         <p data-descSkill="skill1">MongoDB</p>
                         <p data-descSkill="skill2">10%</p>
@@ -500,9 +658,9 @@
                     <div class="bar">
                         <span class="mongodb"></span>
                     </div>
-                </div>
+                </div> -->
                 <!--------------------------------------------------------------------------------------------------->
-                <div class="skill-bar">
+                <!-- <div class="skill-bar">
                     <div class="info">
                         <p data-descSkill="skill1">GitHub</p>
                         <p data-descSkill="skill2">60%</p>
@@ -511,10 +669,10 @@
                     <div class="bar">
                         <span class="github"></span>
                     </div>
-                </div>
+                </div> -->
 
                 <!--------------------------------------------------------------------------------------------------->
-                <div class="skill-bar">
+                <!-- <div class="skill-bar">
                     <div class="info">
                         <p data-descSkill="skill1">AWS</p>
                         <p data-descSkill="skill2">15%</p>
@@ -523,9 +681,9 @@
                     <div class="bar">
                         <span class="aws"></span>
                     </div>
-                </div>
+                </div> -->
                 <!--------------------------------------------------------------------------------------------------->
-                <div class="skill-bar">
+                <!-- <div class="skill-bar">
                     <div class="info">
                         <p>Azure</p>
                         <p>25%</p>
@@ -534,11 +692,11 @@
                     <div class="bar">
                         <span class="microsoft-azure"></span>
                     </div>
-                </div>
+                </div> -->
                 <!--------------------------------------------------------------------------------------------------->
 
 
-                <div class="skill-bar">
+                <!-- <div class="skill-bar">
                     <div class="info">
                         <p>HTML 5</p>
                         <p>72%</p>
@@ -547,10 +705,10 @@
                     <div class="bar">
                         <span class="html"></span>
                     </div>
-                </div>
+                </div> -->
                 <!--------------------------------------------------------------------------------------------------->
 
-                <div class="skill-bar">
+                <!-- <div class="skill-bar">
                     <div class="info">
                         <p>Figma</p>
                         <p>35%</p>
@@ -559,10 +717,10 @@
                     <div class="bar">
                         <span class="figma"></span>
                     </div>
-                </div>
+                </div> -->
                 <!--------------------------------------------------------------------------------------------------->
 
-                <div class="skill-bar">
+                <!-- <div class="skill-bar">
                     <div class="info">
                         <p>javascript</p>
                         <p>20%</p>
@@ -571,9 +729,9 @@
                     <div class="bar">
                         <span class="javascript"></span>
                     </div>
-                </div>
+                </div> -->
                 <!--------------------------------------------------------------------------------------------------->
-                <div class="skill-bar">
+                <!-- <div class="skill-bar">
                     <div class="info">
                         <p>CSS 3</p>
                         <p>40%</p>
@@ -583,12 +741,12 @@
                         <span class="css"></span>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
 
             <!-------Habilidades Skill-right /Altera a porcentagem dos circolo ----------------------------------------------->
-            <div class="skill-right scroll-scale">
+            <!-- <div class="skill-right scroll-scale">
                 <h3>Habilidades Profissional</h3>
                 <div class="professional">
                     <div class="box">
@@ -597,61 +755,61 @@
                             <big>90%</big>
                             <small>Team Work</small>
                         </div>
-                    </div>
+                    </div> -->
                     <!------------------------------------------------------------------------------------------------------->
-                    <div class="box">
+                    <!-- <div class="box">
                         <div class="circle" data-dots="80" data-percent="65"></div>
                         <div class="text">
                             <big>65%</big>
                             <small>Criatividade</small>
                         </div>
-                    </div>
+                    </div> -->
                     <!----------------------------------------------------------------------------------------------------------->
-                    <div class="box">
+                    <!-- <div class="box">
                         <div class="circle" data-dots="80" data-percent="30"></div>
                         <div class="text">
                             <big>30%</big>
                             <small>Projetos</small>
                         </div>
-                    </div>
+                    </div> -->
                     <!--------------------------------------------------------------------------------------------------------------->
-                    <div class="box">
+                    <!-- <div class="box">
                         <div class="circle" data-dots="80" data-percent="50"></div>
                         <div class="text">
                             <big>50%</big>
                             <small>Comunicação</small>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!--------------------------------------------------------------------------------------------------------------->
-                    <div class="box">
+                    <!-- <div class="box">
                         <div class="circle" data-dots="80" data-percent="80"></div>
                         <div class="text">
                             <big>80%</big>
                             <small>Adaptabilidade</small>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!--------------------------------------------------------------------------------------------------------------->
-                    <div class="box">
+                    <!-- <div class="box">
                         <div class="circle" data-dots="80" data-percent="70"></div>
                         <div class="text">
                             <big>70%</big>
                             <small>Mentoria</small>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!--------------------------------------------------------------------------------------------------------------->
-                    <div class="box">
+                    <!-- <div class="box">
                         <div class="circle" data-dots="80" data-percent="70"></div>
                         <div class="text">
                             <big>70%</big>
                             <small>Empatia</small>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!--------------------------------------------------------------------------------------------------------------->
-                    <div class="box">
+                    <!-- <div class="box">
                         <div class="circle" data-dots="80" data-percent="85"></div>
                         <div class="text">
                             <big>85%</big>
@@ -660,7 +818,7 @@
                     </div>
 
                 </div>
-            </div>
+            </div> -->
     </section>
 
     <!-- skill Portfolio section --------------------------------------------------------------------------------------->
@@ -955,6 +1113,8 @@
 
 
    <script src="./javascript/main.js"></script>
+
+   <script src="./javascript/relogio.js"></script>
 
     
 </body>

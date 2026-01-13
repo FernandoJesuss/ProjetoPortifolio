@@ -1,0 +1,292 @@
+/* =================================================
+   RESET BÁSICO
+================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =================================================
+   BASE — MOBILE FIRST (até 599px)
+================================================= */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    padding: 16px;
+}
+
+/* WATCH */
+.watch-wrapper {
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+
+.watch-frame {
+    
+    position: relative;
+    width: 100%;
+    height: 220px;
+    border-radius: 60px;
+    padding: 12px;
+}
+
+/* ELEMENTO CENTRAL */
+.rl {
+    width: 169px;
+    position: absolute;
+    inset: 0;
+    transform: translate(11.9%, -29.8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+   
+}
+
+/* TIME */
+.time-display {
+    position: absolute;
+    top: 17%;
+    transform: translate(-5%);
+    width: 100%;
+    text-align: center;
+    z-index: 20;
+}
+
+.time {
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.watch-title {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* CAROUSEL */
+.carousel-container,
+.carousel-items {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item {
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+.carousel-item.prev,
+.carousel-item.next {
+    display: none;
+    opacity: 0.2;
+    transform: scale(0.75);
+}
+
+.carousel-item.current {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 10;
+}
+
+/* CARD */
+.skill-card {
+    width: 135px;
+    height: 161px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-icon {
+    font-size: 36px;
+    margin-bottom: 6px;
+}
+
+.skill-name {
+    font-size: 11px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.skill-description {
+    font-size: 12px;
+    color: rgba(255,255,255,.8);
+    text-align: center;
+}
+
+/* BOTÕES */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.nav-btn.prev { left: 40px; 
+ opacity: 0.7;
+}
+.nav-btn.next { right: 40px;
+opacity: 0.7; }
+
+.nav-btn.prev:hover,
+.nav-btn.next:hover {
+  border: 2px  #696363; /* borda vermelha no hover */
+  opacity: 1;
+}
+
+.nav-btn:active {
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+  opacity: 1;
+}
+
+
+
+/* DOTS */
+.dots-indicator {
+    display: none;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.4);
+}
+
+.dot.active {
+    width: 14px;
+    background: #fff;
+}
+
+.global-control {
+    display: none;
+}
+
+/* =================================================
+   TABLET (≥ 600px)
+================================================= */
+@media (min-width: 600px) {
+
+    .container {
+        gap: 40px;
+    }
+
+    .watch-wrapper {
+        width: 205px;
+        height: 330px;
+    }
+
+    .watch-frame {
+        height: 220px;
+      
+        border-radius: 70px;
+    }
+    
+
+    .time {
+        font-size: 16px;
+    }
+
+    .skill-card {
+        width: 140px;
+        height: 160px;
+        border-radius: 35px;
+    }
+
+    .nav-btn {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* =================================================
+   DESKTOP (≥ 900px)
+================================================= */
+@media (min-width: 900px) {
+
+
+.rl {
+    width: 230px;
+    position: absolute;
+    inset: 0;
+    transform: translate(9%, -60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+   
+   
+     
+}
+
+
+
+
+
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1200px;
+        margin: auto;
+        gap: 60px;
+    }
+
+    .watch-wrapper {
+        width: 260px;
+        height: 360px;
+    }
+
+    .watch-frame {
+        height: 260px;
+        border-radius: 80px;
+    }
+
+    .skill-card {
+        width: 185px;
+        height: 221px;
+         border-radius: 45px;
+    }
+
+    .time {
+        font-size: 18px;
+    }
+
+    /* .nav-btn.prev { left: 10px; }
+    .nav-btn.next { right: 10px; } */
+}
+
+/* =================================================
+   ULTRAWIDE (≥ 1600px)
+================================================= */
+@media (min-width: 1600px) {
+
+    .container {
+        max-width: 1600px;
+        gap: 80px;
+    }
+
+    .watch-wrapper {
+        transform: scale(1.05);
+    }
+}
