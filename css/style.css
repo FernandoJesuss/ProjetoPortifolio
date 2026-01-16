@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+
 * {
     padding: 0;
     margin: 0;
@@ -82,21 +84,21 @@ header {
     width: 100%;
     /* height: 6rem; */
 }
-
+/* 
 header .sticky {
     background: var(--bg-color);
     border-bottom: 1px solid var(--secon-bg-color);
     padding: 12px 10%;
 
-}
+} */
 
 
 /* PARTICLES */
 #particles-js {
     position: fixed;
     inset: 0;
-    z-index: -1;
-    pointer-events: none;
+    /* z-index: -1; */
+    /* pointer-events: none; */
 }
 
 
@@ -445,7 +447,7 @@ h6 {
     /*Escondido por padrão */
     position: fixed;
     /* Fixo na tela */
-    z-index: 1;
+    z-index: 99;
     /* Em cima de outros elementos */
     left: 0;
     top: 0;
@@ -1469,7 +1471,8 @@ footer a i {
     header.sticky {
         padding: 15px 5%;
     }
-
+    
+    
     footer {
         padding: 15px 5%;
     }
@@ -1586,6 +1589,7 @@ footer a i {
     #menu-icon.bx-x {
         transform: rotate(-180deg);
     }
+    
 
     .navlist {
         display: flex;
@@ -1662,6 +1666,12 @@ footer a i {
         font-size: 80%;
 
     }
+
+        /* PARTICLES */
+#particles-js {
+    display: none;
+  
+}
 
     footer p {
         font-size: .6rem;

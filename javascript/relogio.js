@@ -168,3 +168,148 @@ updateCarousel('soft', softSkills, 'softSkillsCarousel', 'softDots');
 updateCarousel('hobby', hobbies, 'hobbiesCarousel', 'hobbyDots');
 
 startAutoPlay();
+
+
+
+
+
+
+//Nossos serviços atualização
+
+
+        // Spotlight effect following mouse
+        const spotlight = document.getElementById('spotlight');
+        document.addEventListener('mousemove', (e) => {
+            spotlight.style.left = e.clientX - 300 + 'px';
+            spotlight.style.top = e.clientY - 300 + 'px';
+        });
+
+        // Card mouse move glow effect
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = ((e.clientX - rect.left) / rect.width) * 100;
+                const y = ((e.clientY - rect.top) / rect.height) * 100;
+                
+                card.style.setProperty('--mouse-x', `${x}%`);
+                card.style.setProperty('--mouse-y', `${y}%`);
+
+                // 3D tilt effect
+                const centerX = rect.left + rect.width / 2;
+                const centerY = rect.top + rect.height / 2;
+                const rotateX = (e.clientY - centerY) / 15;
+                const rotateY = (centerX - e.clientX) / 15;
+                
+                card.style.transform = `translateY(-30px) scale(1.03) perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+
+        // Button ripple effect
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                const ripple = document.createElement('span');
+                const rect = button.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.cssText = `
+                    position: absolute;
+                    width: ${size}px;
+                    height: ${size}px;
+                    border-radius: 50%;
+                    background: rgba(255, 255, 255, 0.6);
+                    left: ${x}px;
+                    top: ${y}px;
+                    pointer-events: none;
+                    animation: ripple 0.6s ease-out;
+                `;
+                
+                button.appendChild(ripple);
+                setTimeout(() => ripple.remove(), 600);
+            });
+        });
+
+        // Add ripple animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                0% {
+                    transform: scale(0);
+                    opacity: 1;
+                }
+                100% {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+
+
+
+
+
+//         //testa amanha
+
+
+//         // Detecta se o dispositivo suporta hover (desktop geralmente sim, mobile não)
+// const isDesktop = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+// if (isDesktop) {
+//     // Spotlight effect
+//     const spotlight = document.getElementById('spotlight');
+//     if (spotlight) {
+//         document.addEventListener('mousemove', (e) => {
+//             spotlight.style.left = e.clientX - 300 + 'px';
+//             spotlight.style.top = e.clientY - 300 + 'px';
+//         });
+//     }
+
+//     // Card tilt effect
+//     document.querySelectorAll('.service-card').forEach(card => {
+//         card.addEventListener('mousemove', (e) => {
+//             const rect = card.getBoundingClientRect();
+//             const centerX = rect.left + rect.width / 2;
+//             const centerY = rect.top + rect.height / 2;
+//             const rotateX = (e.clientY - centerY) / 15;
+//             const rotateY = (centerX - e.clientX) / 15;
+//             card.style.transform = `translateY(-30px) scale(1.03) perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+//         });
+//         card.addEventListener('mouseleave', () => {
+//             card.style.transform = '';
+//         });
+//     });
+// }
+
+// // Ripple effect nos botões (sempre ativo)
+// document.querySelectorAll('.cta-button').forEach(button => {
+//     button.addEventListener('click', (e) => {
+//         e.preventDefault();
+//         const ripple = document.createElement('span');
+//         const rect = button.getBoundingClientRect();
+//         const size = Math.max(rect.width, rect.height);
+//         const x = e.clientX - rect.left - size / 2;
+//         const y = e.clientY - rect.top - size / 2;
+//         ripple.style.cssText = `
+//             position: absolute;
+//             width: ${size}px;
+//             height: ${size}px;
+//             border-radius: 50%;
+//             background: rgba(255, 255, 255, 0.6);
+//             left: ${x}px;
+//             top: ${y}px;
+//             pointer-events: none;
+//             animation: ripple 0.6s ease-out;
+//         `;
+//         button.appendChild(ripple);
+//         setTimeout(() => ripple.remove(), 600);
+//     });
+// });
