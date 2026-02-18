@@ -253,5 +253,3 @@ startAutoPlay();
         document.head.appendChild(style);
 
 
-
-

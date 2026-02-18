@@ -1,107 +1,107 @@
-/* =========================
-   TEXTO ANIMADO
-========================= */
-let words = document.querySelectorAll(".word");
+// /* =========================
+//    TEXTO ANIMADO
+// ========================= */
+// let words = document.querySelectorAll(".word");
 
-words.forEach(word => {
-    let letters = word.textContent.split("");
-    word.textContent = "";
-    letters.forEach(letter => {
-        let span = document.createElement("span");
-        span.textContent = letter;
-        span.className = "letter";
-        word.append(span);
-    });
-});
+// words.forEach(word => {
+//     let letters = word.textContent.split("");
+//     word.textContent = "";
+//     letters.forEach(letter => {
+//         let span = document.createElement("span");
+//         span.textContent = letter;
+//         span.className = "letter";
+//         word.append(span);
+//     });
+// });
 
-let currentWordIndex = 0;
-let maxWordIndex = words.length - 1;
-words[currentWordIndex].style.opacity = "1";
+// let currentWordIndex = 0;
+// let maxWordIndex = words.length - 1;
+// words[currentWordIndex].style.opacity = "1";
 
-function changeText() {
-    let currentWord = words[currentWordIndex];
-    let nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
+// function changeText() {
+//     let currentWord = words[currentWordIndex];
+//     let nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
 
-    Array.from(currentWord.children).forEach((letter, i) => {
-        setTimeout(() => {
-            letter.className = "letter out";
-        }, i * 80);
-    });
+//     Array.from(currentWord.children).forEach((letter, i) => {
+//         setTimeout(() => {
+//             letter.className = "letter out";
+//         }, i * 80);
+//     });
 
-    nextWord.style.opacity = "1";
-    Array.from(nextWord.children).forEach((letter, i) => {
-        letter.className = "letter behind";
-        setTimeout(() => {
-            letter.className = "letter in";
-        }, 340 + i * 80);
-    });
+//     nextWord.style.opacity = "1";
+//     Array.from(nextWord.children).forEach((letter, i) => {
+//         letter.className = "letter behind";
+//         setTimeout(() => {
+//             letter.className = "letter in";
+//         }, 340 + i * 80);
+//     });
 
-    currentWordIndex = currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
-}
+//     currentWordIndex = currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
+// }
 
-changeText();
-setInterval(changeText, 3000);
-
-
-/* =========================
-   CIRCLE SKILLS
-========================= */
-const circles = document.querySelectorAll(".circle");
-
-circles.forEach(elem => {
-    const dots = elem.getAttribute("data-dots");
-    const marked = elem.getAttribute("data-percent");
-    const percent = Math.floor(dots * marked / 100);
-    const rotate = 360 / dots;
-    let points = "";
-
-    for (let i = 0; i < dots; i++) {
-        points += `<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>`;
-    }
-
-    elem.innerHTML = points;
-
-    const pointsMarked = elem.querySelectorAll(".points");
-    for (let i = 0; i < percent; i++) {
-        pointsMarked[i].classList.add("marked");
-    }
-});
+// changeText();
+// setInterval(changeText, 3000);
 
 
-/* =========================
-   MIXITUP
-========================= */
-var mixer = mixitup('.portfolio-gallery');
+// /* =========================
+//    CIRCLE SKILLS
+// ========================= */
+// const circles = document.querySelectorAll(".circle");
+
+// circles.forEach(elem => {
+//     const dots = elem.getAttribute("data-dots");
+//     const marked = elem.getAttribute("data-percent");
+//     const percent = Math.floor(dots * marked / 100);
+//     const rotate = 360 / dots;
+//     let points = "";
+
+//     for (let i = 0; i < dots; i++) {
+//         points += `<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>`;
+//     }
+
+//     elem.innerHTML = points;
+
+//     const pointsMarked = elem.querySelectorAll(".points");
+//     for (let i = 0; i < percent; i++) {
+//         pointsMarked[i].classList.add("marked");
+//     }
+// });
 
 
-/* =========================
-   MENU ATIVO NO SCROLL (CORRIGIDO)
-========================= */
-const navLinks = document.querySelectorAll(".navlist a");
-const sections = document.querySelectorAll("section");
+// /* =========================
+//    MIXITUP
+// ========================= */
+// var mixer = mixitup('.portfolio-gallery');
 
-const observerMenu = new IntersectionObserver(
-    entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                navLinks.forEach(link => {
-                    link.classList.remove("active");
 
-                    if (link.getAttribute("href") === `#${entry.target.id}`) {
-                        link.classList.add("active");
-                    }
-                });
-            }
-        });
-    },
-    {
-        root: null,
-        rootMargin: "-50% 0px -50% 0px",
-        threshold: 0
-    }
-);
+// /* =========================
+//    MENU ATIVO NO SCROLL (CORRIGIDO)
+// ========================= */
+// const navLinks = document.querySelectorAll(".navlist a");
+// const sections = document.querySelectorAll("section");
 
-sections.forEach(section => observerMenu.observe(section));
+// const observerMenu = new IntersectionObserver(
+//     entries => {
+//         entries.forEach(entry => {
+//             if (entry.isIntersecting) {
+//                 navLinks.forEach(link => {
+//                     link.classList.remove("active");
+
+//                     if (link.getAttribute("href") === `#${entry.target.id}`) {
+//                         link.classList.add("active");
+//                     }
+//                 });
+//             }
+//         });
+//     },
+//     {
+//         root: null,
+//         rootMargin: "-50% 0px -50% 0px",
+//         threshold: 0
+//     }
+// );
+
+// sections.forEach(section => observerMenu.observe(section));
 
 
 
@@ -151,7 +151,7 @@ scrollTop.forEach(el => observer.observe(el));
 
 
 /* =========================
-   MODAL
+   MODAL de serviços
 ========================= */
 function openModal(modalId) {
     document.getElementById(modalId).style.display = "block";
@@ -249,3 +249,216 @@ Modal Formulario para Contato
             document.body.style.overflow = '';
             form.reset();
         });
+
+
+
+let words = document.querySelectorAll(".word");
+
+if (words.length > 0) {
+
+    words.forEach(word => {
+        let letters = word.textContent.split("");
+        word.textContent = "";
+        letters.forEach(letter => {
+            let span = document.createElement("span");
+            span.textContent = letter;
+            span.className = "letter";
+            word.append(span);
+        });
+    });
+
+    let currentWordIndex = 0;
+    let maxWordIndex = words.length - 1;
+
+    words[currentWordIndex].style.opacity = "1";
+
+    function changeText() {
+        let currentWord = words[currentWordIndex];
+        let nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
+
+        Array.from(currentWord.children).forEach((letter, i) => {
+            setTimeout(() => {
+                letter.className = "letter out";
+            }, i * 80);
+        });
+
+        nextWord.style.opacity = "1";
+
+        Array.from(nextWord.children).forEach((letter, i) => {
+            letter.className = "letter behind";
+            setTimeout(() => {
+                letter.className = "letter in";
+            }, 340 + i * 80);
+        });
+
+        currentWordIndex = currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
+    }
+
+    changeText();
+    setInterval(changeText, 3000);
+}
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   CARROSSEL (SEGURO)
+========================= */
+(function () {
+
+    const track = document.getElementById('track');
+    if (!track) return; // ⛔ Se não existir, para aqui sem quebrar nada
+
+    const cards = track.querySelectorAll('.project-card');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const dotTrack = document.getElementById('dotTrack');
+    const counterCurrent = document.getElementById('counterCurrent');
+    const counterTotal = document.getElementById('counterTotal');
+
+    const total = cards.length;
+    let current = 0;
+
+    if (!total) return;
+
+    /* BUILD DOTS */
+    if (counterTotal) {
+        counterTotal.textContent = String(total).padStart(2, '0');
+    }
+
+    if (dotTrack) {
+        cards.forEach((_, i) => {
+            const dot = document.createElement('div');
+            dot.className = 'dot' + (i === 0 ? ' active' : '');
+            dot.addEventListener('click', () => goTo(i));
+            dotTrack.appendChild(dot);
+        });
+    }
+
+    function getDots() {
+        return dotTrack ? dotTrack.querySelectorAll('.dot') : [];
+    }
+
+    function updateDots(idx) {
+        getDots().forEach((d, i) => {
+            d.classList.toggle('active', i === idx);
+        });
+
+        if (counterCurrent) {
+            counterCurrent.textContent = String(idx + 1).padStart(2, '0');
+        }
+    }
+
+    function getCardOffset(idx) {
+        const card = cards[idx];
+        const trackRect = track.getBoundingClientRect();
+        const cardRect = card.getBoundingClientRect();
+
+        return track.scrollLeft +
+            cardRect.left -
+            trackRect.left -
+            (track.clientWidth / 2) +
+            (card.offsetWidth / 2);
+    }
+
+    function goTo(idx) {
+        current = Math.max(0, Math.min(total - 1, idx));
+        track.scrollTo({
+            left: getCardOffset(current),
+            behavior: 'smooth'
+        });
+        updateDots(current);
+    }
+
+    /* BOTÕES */
+    if (prevBtn) prevBtn.addEventListener('click', () => goTo(current - 1));
+    if (nextBtn) nextBtn.addEventListener('click', () => goTo(current + 1));
+
+    /* TECLADO */
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowLeft') goTo(current - 1);
+        if (e.key === 'ArrowRight') goTo(current + 1);
+    });
+
+    /* INTERSECTION OBSERVER */
+    const observerCarousel = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.intersectionRatio > 0.6) {
+                current = parseInt(entry.target.dataset.index);
+                updateDots(current);
+            }
+        });
+    }, { root: track, threshold: 0.6 });
+
+    cards.forEach(c => observerCarousel.observe(c));
+
+    /* DRAG SCROLL */
+    let isDown = false, startX, scrollLeft;
+
+    track.addEventListener('mousedown', e => {
+        isDown = true;
+        track.classList.add('grabbing');
+        startX = e.pageX - track.offsetLeft;
+        scrollLeft = track.scrollLeft;
+    });
+
+    track.addEventListener('mouseleave', () => {
+        isDown = false;
+        track.classList.remove('grabbing');
+    });
+
+    track.addEventListener('mouseup', () => {
+        isDown = false;
+        track.classList.remove('grabbing');
+    });
+
+    track.addEventListener('mousemove', e => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - track.offsetLeft;
+        track.scrollLeft = scrollLeft - (x - startX) * 1.5;
+    });
+
+    /* VIDEO + AUDIO */
+    cards.forEach(card => {
+        const video = card.querySelector('.card-video');
+        const audio = card.querySelector('.card-audio');
+
+        card.addEventListener('mouseenter', () => {
+            if (video) {
+                video.currentTime = 0;
+                video.play().catch(() => { });
+            }
+            if (audio) {
+                audio.currentTime = 0;
+                audio.play().catch(() => { });
+            }
+        });
+
+        card.addEventListener('mouseleave', () => {
+            if (video) {
+                video.pause();
+                video.currentTime = 0;
+            }
+            if (audio) {
+                audio.pause();
+                audio.currentTime = 0;
+            }
+        });
+    });
+
+})();
+
+
+        
