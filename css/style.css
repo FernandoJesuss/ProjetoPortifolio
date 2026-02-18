@@ -1063,7 +1063,7 @@ footer i {
 
 
 
-/*res*/
+/*CSSe responsivo do carrossel*/
 
      :root {
             --cyan: #06b6d4;
@@ -1866,9 +1866,6 @@ footer i {
                 left: 12.1rem;
                 top: 11.7rem;
             }
-
-
-
 
             .card-title {
                 position: relative;
