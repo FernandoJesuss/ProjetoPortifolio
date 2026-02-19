@@ -74,34 +74,37 @@
 // var mixer = mixitup('.portfolio-gallery');
 
 
-// /* =========================
-//    MENU ATIVO NO SCROLL (CORRIGIDO)
-// ========================= */
-// const navLinks = document.querySelectorAll(".navlist a");
-// const sections = document.querySelectorAll("section");
+/* =========================
+   MENU ATIVO NO SCROLL (CORRIGIDO)
+========================= */
+const navLinks = document.querySelectorAll(".navlist a");
+const sections = document.querySelectorAll("section");
 
-// const observerMenu = new IntersectionObserver(
-//     entries => {
-//         entries.forEach(entry => {
-//             if (entry.isIntersecting) {
-//                 navLinks.forEach(link => {
-//                     link.classList.remove("active");
+const observerMenu = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navLinks.forEach(link => {
+                    link.classList.remove("active");
 
-//                     if (link.getAttribute("href") === `#${entry.target.id}`) {
-//                         link.classList.add("active");
-//                     }
-//                 });
-//             }
-//         });
-//     },
-//     {
-//         root: null,
-//         rootMargin: "-50% 0px -50% 0px",
-//         threshold: 0
-//     }
-// );
+                    if (link.getAttribute("href") === `#${entry.target.id}`) {
+                        link.classList.add("active");
+                    }
+                });
+            }
+        });
+    },
+    {
+        root: null,
+        rootMargin: "-50% 0px -50% 0px",
+        threshold: 0
+    }
+);
 
-// sections.forEach(section => observerMenu.observe(section));
+sections.forEach(section => observerMenu.observe(section));
+
+
+
 
 
 
