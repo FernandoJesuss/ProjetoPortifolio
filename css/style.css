@@ -1965,7 +1965,7 @@ h1 em { font-style: normal; color: var(--cyan); }
     .info-about1, .info-about2, .info-about3 { display: none; }
     .img-about p { font-size: 1rem; }
 
-    .socials-cell { display: flex; gap: 6px; padding: 10px 14px; align-items: center; width: 134.8px;position: relative;  right: 2.8%;}
+    .socials-cell { display: flex; gap: 6px; padding: 10px 14px; align-items: center; width: 130.8px;position: relative;  right: 2.8%;}
 }
 
 @media(max-width:420px) {
