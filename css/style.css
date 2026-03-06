@@ -1957,7 +1957,7 @@ h1 em { font-style: normal; color: var(--cyan); }
     .fillter-buttons { margin: 2.5rem; }
 }
 
-@media(max-width:420px) {
+@media(max-width:480px) {
     html { font-size: 80%; }
     #particles-js { display: none; }
     .fillter-buttons .button { font-size: .8rem; }
@@ -2560,7 +2560,7 @@ select { cursor: pointer; }
     .fse-header { grid-template-columns: 1fr; }
     .fse-metrics { flex-direction: row; flex-wrap: wrap; }
     .fse-metric  { flex: 1; min-width: 170px; }
-    .fse-metric-label { display: ruby; position: relative; font-size: 13px; font-weight: 400; color: var(--fse-muted); text-align: center; right: 3.8rem; line-height: 1.4; letter-spacing: 0.02em; }
+    .fse-metric-label { display: ruby; position: relative; font-size: 13px; font-weight: 400; color: var(--fse-muted); text-align: center; right: 2rem; line-height: 1.4; letter-spacing: 0.02em; }
     .fse-fe-layout { grid-template-columns: 1fr; }
     .fse-main-card { border-radius: 4px 4px 0 0; }
     .fse-cap-grid { grid-template-rows: auto; grid-template-columns: 1fr 1fr 1fr; }
