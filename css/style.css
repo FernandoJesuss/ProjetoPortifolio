@@ -1966,6 +1966,7 @@ h1 em { font-style: normal; color: var(--cyan); }
     .img-about p { font-size: 1rem; }
 
     .socials-cell { display: flex; gap: 6px; padding: 10px 14px; align-items: center; width: 130.8px;position: relative;  right: 2.8%;}
+    .stat-cell { flex: 1; padding: 14px 8px; text-align: center; border-right: 1px solid var(--line); }
 }
 
 @media(max-width:420px) {
