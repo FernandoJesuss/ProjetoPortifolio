@@ -275,7 +275,7 @@
 const roles = [
   "Desenvolvedor Web Full Stack",
   "Certificação Microsoft",
-  "Suporte Técnico Sênior",
+  "Suporte Técnico",
   "Solucionador de Problemas"
 ];
 
