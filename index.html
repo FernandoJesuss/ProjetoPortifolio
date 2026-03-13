@@ -65,6 +65,7 @@
                 <div class="logo" aria-label="Fernando Santos">Fernando<em>.</em></div>
                 <ul class="nav-links" role="list">
                     <li><a href="#" class="active" aria-current="page">Home</a></li>
+                     <li><a href="#destaque">Destaque</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#especialidades">Especialidades</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
@@ -84,6 +85,7 @@
             <div class="mobile-overlay" id="mobileMenu" aria-hidden="true">
                 <ul class="nav-links" role="list">
                     <li><a href="#" class="active">Home</a></li>
+                     <li><a href="#destaque">Destaque</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#especialidades">Especialidades</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
@@ -347,6 +349,535 @@
 
         </section>
 
+           <!-- Area de Projetos skill Portfolio section --------------------------------------------------------------------------------------->
+
+<!-- ══ FEATURED WORK — cole ANTES da section#projetos ══ -->
+<section class="fv-section" id="destaque" aria-labelledby="titulo-featured">
+ 
+    <div class="fv-wrapper">
+ 
+        <!-- HEADER — mesmo estilo da área de projetos -->
+        <header class="fv-header fv-fade fv-d1">
+            <div class="fp-tag" aria-hidden="true">Projetos em Destaque</div>
+            <h2 class="fp-title" id="titulo-featured">Featured<br><span>Work.</span></h2>
+        </header>
+ 
+        <!-- 3 VÍDEOS -->
+        <div class="fv-grid fv-fade fv-d2">
+ 
+            <!-- ── DevBurguer ── -->
+            <div class="fv-item">
+                <div class="fv-browser">
+                    <div class="fv-bar">
+                        <span class="fv-dot fv-r"></span>
+                        <span class="fv-dot fv-y"></span>
+                        <span class="fv-dot fv-g"></span>
+                        <span class="fv-urlbar">devburger.app</span>
+                    </div>
+                    <div class="fv-screen">
+                        <video src="./videos/devburger.mp4"
+                            autoplay muted loop playsinline
+                            aria-label="Preview DevBurguer"></video>
+                    </div>
+                </div>
+                <div class="fv-info">
+                    <h3 class="fv-name">DevBurguer</h3>
+                    <p class="fv-techs">React · Node.js · Stripe</p>
+                </div>
+            </div>
+ 
+            <!-- ── Conversor de Moedas ── -->
+            <div class="fv-item">
+                <div class="fv-browser">
+                    <div class="fv-bar">
+                        <span class="fv-dot fv-r"></span>
+                        <span class="fv-dot fv-y"></span>
+                        <span class="fv-dot fv-g"></span>
+                        <span class="fv-urlbar">conversor-moedas.app</span>
+                    </div>
+                    <div class="fv-screen">
+                        <video src="./videos/conversor-moedas.mp4"
+                            autoplay muted loop playsinline
+                            aria-label="Preview Conversor de Moedas"></video>
+                    </div>
+                </div>
+                <div class="fv-info">
+                    <h3 class="fv-name">Conversor de Moedas</h3>
+                    <p class="fv-techs">HTML · CSS · JavaScript</p>
+                </div>
+            </div>
+ 
+            <!-- ── Cardápio Burger ── -->
+            <div class="fv-item">
+                <div class="fv-browser">
+                    <div class="fv-bar">
+                        <span class="fv-dot fv-r"></span>
+                        <span class="fv-dot fv-y"></span>
+                        <span class="fv-dot fv-g"></span>
+                        <span class="fv-urlbar">cardapio-burger.app</span>
+                    </div>
+                    <div class="fv-screen">
+                        <video src="./videos/cardapio burger.mp4"
+                            autoplay muted loop playsinline
+                            aria-label="Preview Cardápio Burger"></video>
+                    </div>
+                </div>
+                <div class="fv-info">
+                    <h3 class="fv-name">Cardápio Burger</h3>
+                    <p class="fv-techs">HTML · CSS · JavaScript</p>
+                </div>
+            </div>
+ 
+        </div>
+    </div>
+</section>
+ 
+<!-- ══ Fim Projetos em destaque FEATURED WORK  ══ -->
+
+        <!-- ══ Carrossel Projetos Selecionados ══ -->
+        <section class="fp-section" id="projetos" aria-labelledby="titulo-projetos">
+
+            <!-- HEADER -->
+            <header class="fp-header fp-fade fp-d1">
+                <div>
+                    <div class="fp-tag" aria-hidden="true">O que eu farei por você</div>
+                    <h2 class="fp-title" id="titulo-projetos">Selected<br><span>Projects.</span></h2>
+                </div>
+                <div class="fp-header-right">
+                    <p class="fp-subtitle">Aplicações reais com código limpo, performance e atenção aos detalhes que
+                        fazem
+                        diferença.</p>
+                    <div class="fp-nav" role="group" aria-label="Navegação do carrossel">
+                        <button class="fp-nav-btn" id="fp-prev" aria-label="Projeto anterior">
+                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                aria-hidden="true">
+                                <polyline points="15 18 9 12 15 6" />
+                            </svg>
+                        </button>
+                        <span class="fp-nav-count" id="fp-counter" aria-live="polite"><span>1</span> / 11</span>
+                        <button class="fp-nav-btn" id="fp-next" aria-label="Próximo projeto">
+                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                aria-hidden="true">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- CARROSSEL -->
+            <div class="fp-carousel-outer fp-fade fp-d2">
+                <div class="fp-carousel-track" id="fp-track" role="list" aria-label="Lista de projetos">
+
+                    <!-- ── CARD 1: Tesla Redesign ── -->
+                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+                        <div class="fp-media">
+                            <img class="fp-media-img"
+                                src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=640&q=75"
+                                alt="Tesla Redesign — projeto de interface por Fernando Santos" width="640" height="400"
+                                loading="eager" decoding="async" itemprop="image">
+                            <video class="fp-media-video" src="./videos/op1.mp4" muted loop playsinline preload="none"
+                                aria-hidden="true"></video>
+                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
+                            <div class="fp-media-overlay" aria-hidden="true"></div>
+                            <div class="fp-card-num" aria-hidden="true">01</div>
+                        </div>
+                        <div class="fp-card-body">
+                            <div class="fp-techs" aria-label="Tecnologias"><span class="fp-tech">Html</span><span
+                                    class="fp-tech">CSS</span><span class="fp-tech">JavaScript</span></div>
+                            <h3 class="fp-card-name" itemprop="name">Tesla Redesign</h3>
+                            <p class="fp-card-desc" itemprop="description">Uma reimaginação ousada da landing page mais
+                                icônica da indústria automobilística. Performance que inspira o futuro.</p>
+                            <div class="fp-card-footer">
+                                <a href="https://pjt-clone-tesla.netlify.app/" target="_blank" class="fp-link"
+                                    rel="noopener noreferrer" aria-label="Ver Tesla Redesign ao vivo">Ver
+                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 12 12"
+                                        aria-hidden="true">
+                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
+                                    </svg></a>
+                                <a href="https://github.com/FernandoJesuss/ProjetosDev-Tesla" target="_blank"
+                                    class="fp-gh-btn" rel="noopener" aria-label="GitHub do Tesla Redesign"><svg
+                                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ── CARD 2: Cardápio Burger ── -->
+                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+                        <div class="fp-media">
+                            <img class="fp-media-img"
+                                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=640&q=75"
+                                alt="Cardápio Burger — sistema de lanchonete por Fernando Santos" width="640"
+                                height="400" loading="lazy" decoding="async" itemprop="image">
+                            <video class="fp-media-video" src="./videos/cardapio burger.mp4" muted loop playsinline
+                                preload="none" aria-hidden="true"></video>
+                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
+                            <div class="fp-media-overlay" aria-hidden="true"></div>
+                            <div class="fp-card-num" aria-hidden="true">02</div>
+                        </div>
+                        <div class="fp-card-body">
+                            <div class="fp-techs" aria-label="Tecnologias"><span class="fp-tech">HTML</span><span
+                                    class="fp-tech">CSS</span><span class="fp-tech">JavaScript</span></div>
+                            <h3 class="fp-card-name" itemprop="name">Cardápio Burger</h3>
+                            <p class="fp-card-desc" itemprop="description">Este projeto apresenta um cardápio de
+                                hambúrgueres, mostrando diferentes opções de produtos e seus preços. </p>
+                            <div class="fp-card-footer">
+                                <a href="https://subtle-halva-a658d9.netlify.app/" target="_blank" class="fp-link"
+                                    rel="noopener" aria-label="Ver Cardápio Burger ao vivo">Ver
+                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 12 12"
+                                        aria-hidden="true">
+                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
+                                    </svg></a>
+                                <a href="https://github.com/FernandoJesuss/Cardapio" target="_blank" class="fp-gh-btn"
+                                    rel="noopener" aria-label="GitHub do Cardápio Burger"><svg fill="currentColor"
+                                        viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ── CARD 3: Mario Encanador ── -->
+                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+                        <div class="fp-media">
+                            <img class="fp-media-img"
+                                src="https://images.unsplash.com/photo-1534423861386-85a16f5d13fd?w=640&q=75"
+                                alt="Mario Encanador — landing page por Fernando Santos" width="640" height="400"
+                                loading="lazy" decoding="async" itemprop="image">
+                            <video class="fp-media-video" src="./videos/mario bros.mp4" muted loop playsinline
+                                preload="none" aria-hidden="true"></video>
+                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
+                            <div class="fp-media-overlay" aria-hidden="true"></div>
+                            <div class="fp-card-num" aria-hidden="true">03</div>
+                        </div>
+                        <div class="fp-card-body">
+                            <div class="fp-techs" aria-label="Tecnologias"><span class="fp-tech">html</span><span
+                                    class="fp-tech">CSS3</span><span class="fp-tech">javascript</span></div>
+                            <h3 class="fp-card-name" itemprop="name">Mario Encanador</h3>
+                            <p class="fp-card-desc" itemprop="description">Landing page temática com animações CSS,
+                                design
+                                responsivo e SEO técnico completo.</p>
+                            <div class="fp-card-footer">
+                                <a href="https://pjt-mario.netlify.app/" target="_blank" class="fp-link" rel="noopener"
+                                    aria-label="Ver Mario Encanador ao vivo">Ver
+                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 12 12"
+                                        aria-hidden="true">
+                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
+                                    </svg></a>
+                                <a href="https://github.com/FernandoJesuss/Projeto_Mario" target="_blank"
+                                    class="fp-gh-btn" rel="noopener" aria-label="GitHub do Mario Encanador"><svg
+                                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ── CARD 4: Café do Dev ── -->
+                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+                        <div class="fp-media">
+                            <img class="fp-media-img"
+                                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=640&q=75"
+                                alt="Café do Dev — plataforma full-stack por Fernando Santos" width="640" height="400"
+                                loading="lazy" decoding="async" itemprop="image">
+                            <video class="fp-media-video" src="./videos/cafeteria.mp4" muted loop playsinline
+                                preload="none" aria-hidden="true"></video>
+                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
+                            <div class="fp-media-overlay" aria-hidden="true"></div>
+                            <div class="fp-card-num" aria-hidden="true">04</div>
+                        </div>
+                        <div class="fp-card-body">
+                            <div class="fp-techs" aria-label="Tecnologias"><span class="fp-tech">html</span><span
+                                    class="fp-tech">css</span><span class="fp-tech">javascript</span></div>
+                            <h3 class="fp-card-name" itemprop="name">Café do Dev</h3>
+                            <p class="fp-card-desc" itemprop="description">Este é o site de uma cafeteria, com destaque
+                                para o café como produto principal. Conheça nossos tipos: Americano, Expresso e Cappucci
+                            </p>
+                            <div class="fp-card-footer">
+                                <a href="https://pjt-cafeteria.netlify.app/" target="_blank" class="fp-link"
+                                    rel="noopener" aria-label="Ver Café do Dev ao vivo">Ver
+                                    projeto
+                                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 12 12"
+                                        aria-hidden="true">
+                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
+                                    </svg></a>
+                                <a href="https://github.com/FernandoJesuss/cafeteria" target="_blank" class="fp-gh-btn"
+                                    rel="noopener" aria-label="GitHub do Café do Dev"><svg fill="currentColor"
+                                        viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ── CARDS 5–11 ── -->
+                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+                        <div class="fp-media">
+                            <img class="fp-media-img"
+                                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=640&q=75"
+                                alt="Projeto 5 — desenvolvido por Fernando Santos" width="640" height="400"
+                                loading="lazy" decoding="async" itemprop="image">
+                            <video class="fp-media-video" src="./videos/conversor-moedas.mp4" muted loop playsinline
+                                preload="none" aria-hidden="true"></video>
+                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
+                            <div class="fp-media-overlay" aria-hidden="true"></div>
+                            <div class="fp-card-num" aria-hidden="true">05</div>
+                        </div>
+                        <div class="fp-card-body">
+                            <div class="fp-techs" aria-label="Tecnologias"><span class="fp-tech">html</span><span
+                                    class="fp-tech">css</span><span class="fp-tech">javascript</span></div>
+                            <h3 class="fp-card-name" itemprop="name">Projeto 05</h3>
+                            <p class="fp-card-desc" itemprop="description">O objetivo deste projeto é criar um site
+                                conversor de moedas. Basta inserir o valor e escolher a moeda de destino para obter a
+                                conversão.</p>
+                            <div class="fp-card-footer">
+                                <a href="https://pjt-converso-moedas.netlify.app/" target="_blank" class="fp-link"
+                                    rel="noopener" aria-label="Ver Projeto 05 ao vivo">Ver
+                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 12 12"
+                                        aria-hidden="true">
+                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
+                                    </svg></a>
+                                <a href="https://github.com/FernandoJesuss/Conversor_Moedas" target="_blank"
+                                    class="fp-gh-btn" rel="noopener" aria-label="GitHub do Projeto 05"><svg
+                                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+                        <div class="fp-media">
+                            <img class="fp-media-img"
+                                src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=640&q=75"
+                                alt="Projeto 6 — desenvolvido por Fernando Santos" width="640" height="400"
+                                loading="lazy" decoding="async" itemprop="image">
+                            <video class="fp-media-video" src="" muted loop playsinline preload="none"
+                                aria-hidden="true"></video>
+                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
+                            <div class="fp-media-overlay" aria-hidden="true"></div>
+                            <div class="fp-card-num" aria-hidden="true">06</div>
+                        </div>
+                        <div class="fp-card-body">
+                            <div class="fp-techs" aria-label="Tecnologias"><span class="fp-tech">Node.js</span><span
+                                    class="fp-tech">Docker</span></div>
+                            <h3 class="fp-card-name" itemprop="name">Projeto 06</h3>
+                            <p class="fp-card-desc" itemprop="description">Descrição breve do projeto. Substitua com
+                                informações reais.</p>
+                            <div class="fp-card-footer">
+                                <a href="#" class="fp-link" rel="noopener" aria-label="Ver Projeto 06 ao vivo">Ver
+                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2"
+                                        viewBox="0 0 12 12" aria-hidden="true">
+                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
+                                    </svg></a>
+                                <a href="#" class="fp-gh-btn" rel="noopener" aria-label="GitHub do Projeto 06"><svg
+                                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+                        <div class="fp-media">
+                            <img class="fp-media-img"
+                                src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=640&q=75"
+                                alt="Projeto 7 — desenvolvido por Fernando Santos" width="640" height="400"
+                                loading="lazy" decoding="async" itemprop="image">
+                            <video class="fp-media-video" src="" muted loop playsinline preload="none"
+                                aria-hidden="true"></video>
+                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
+                            <div class="fp-media-overlay" aria-hidden="true"></div>
+                            <div class="fp-card-num" aria-hidden="true">07</div>
+                        </div>
+                        <div class="fp-card-body">
+                            <div class="fp-techs" aria-label="Tecnologias"><span class="fp-tech">React</span><span
+                                    class="fp-tech">AWS</span></div>
+                            <h3 class="fp-card-name" itemprop="name">Projeto 07</h3>
+                            <p class="fp-card-desc" itemprop="description">Descrição breve do projeto. Substitua com
+                                informações reais.</p>
+                            <div class="fp-card-footer">
+                                <a href="#" class="fp-link" rel="noopener" aria-label="Ver Projeto 07 ao vivo">Ver
+                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2"
+                                        viewBox="0 0 12 12" aria-hidden="true">
+                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
+                                    </svg></a>
+                                <a href="#" class="fp-gh-btn" rel="noopener" aria-label="GitHub do Projeto 07"><svg
+                                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+                        <div class="fp-media">
+                            <img class="fp-media-img"
+                                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=640&q=75"
+                                alt="Projeto 8 — desenvolvido por Fernando Santos" width="640" height="400"
+                                loading="lazy" decoding="async" itemprop="image">
+                            <video class="fp-media-video" src="" muted loop playsinline preload="none"
+                                aria-hidden="true"></video>
+                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
+                            <div class="fp-media-overlay" aria-hidden="true"></div>
+                            <div class="fp-card-num" aria-hidden="true">08</div>
+                        </div>
+                        <div class="fp-card-body">
+                            <div class="fp-techs" aria-label="Tecnologias"><span
+                                    class="fp-tech">JavaScript</span><span class="fp-tech">MongoDB</span></div>
+                            <h3 class="fp-card-name" itemprop="name">Projeto 08</h3>
+                            <p class="fp-card-desc" itemprop="description">Descrição breve do projeto. Substitua com
+                                informações reais.</p>
+                            <div class="fp-card-footer">
+                                <a href="#" class="fp-link" rel="noopener" aria-label="Ver Projeto 08 ao vivo">Ver
+                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2"
+                                        viewBox="0 0 12 12" aria-hidden="true">
+                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
+                                    </svg></a>
+                                <a href="#" class="fp-gh-btn" rel="noopener" aria-label="GitHub do Projeto 08"><svg
+                                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+                        <div class="fp-media">
+                            <img class="fp-media-img"
+                                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=640&q=75"
+                                alt="Projeto 9 — desenvolvido por Fernando Santos" width="640" height="400"
+                                loading="lazy" decoding="async" itemprop="image">
+                            <video class="fp-media-video" src="" muted loop playsinline preload="none"
+                                aria-hidden="true"></video>
+                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
+                            <div class="fp-media-overlay" aria-hidden="true"></div>
+                            <div class="fp-card-num" aria-hidden="true">09</div>
+                        </div>
+                        <div class="fp-card-body">
+                            <div class="fp-techs" aria-label="Tecnologias"><span
+                                    class="fp-tech">TypeScript</span><span class="fp-tech">Docker</span></div>
+                            <h3 class="fp-card-name" itemprop="name">Projeto 09</h3>
+                            <p class="fp-card-desc" itemprop="description">Descrição breve do projeto. Substitua com
+                                informações reais.</p>
+                            <div class="fp-card-footer">
+                                <a href="#" class="fp-link" rel="noopener" aria-label="Ver Projeto 09 ao vivo">Ver
+                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2"
+                                        viewBox="0 0 12 12" aria-hidden="true">
+                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
+                                    </svg></a>
+                                <a href="#" class="fp-gh-btn" rel="noopener" aria-label="GitHub do Projeto 09"><svg
+                                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+                        <div class="fp-media">
+                            <img class="fp-media-img"
+                                src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=640&q=75"
+                                alt="Projeto 10 — desenvolvido por Fernando Santos" width="640" height="400"
+                                loading="lazy" decoding="async" itemprop="image">
+                            <video class="fp-media-video" src="" muted loop playsinline preload="none"
+                                aria-hidden="true"></video>
+                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
+                            <div class="fp-media-overlay" aria-hidden="true"></div>
+                            <div class="fp-card-num" aria-hidden="true">10</div>
+                        </div>
+                        <div class="fp-card-body">
+                            <div class="fp-techs" aria-label="Tecnologias"><span class="fp-tech">React</span><span
+                                    class="fp-tech">Node.js</span></div>
+                            <h3 class="fp-card-name" itemprop="name">Projeto 10</h3>
+                            <p class="fp-card-desc" itemprop="description">Descrição breve do projeto. Substitua com
+                                informações reais.</p>
+                            <div class="fp-card-footer">
+                                <a href="#" class="fp-link" rel="noopener" aria-label="Ver Projeto 10 ao vivo">Ver
+                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2"
+                                        viewBox="0 0 12 12" aria-hidden="true">
+                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
+                                    </svg></a>
+                                <a href="#" class="fp-gh-btn" rel="noopener" aria-label="GitHub do Projeto 10"><svg
+                                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+                        <div class="fp-media">
+                            <img class="fp-media-img"
+                                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=640&q=75"
+                                alt="Projeto 11 — desenvolvido por Fernando Santos" width="640" height="400"
+                                loading="lazy" decoding="async" itemprop="image">
+                            <video class="fp-media-video" src="" muted loop playsinline preload="none"
+                                aria-hidden="true"></video>
+                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
+                            <div class="fp-media-overlay" aria-hidden="true"></div>
+                            <div class="fp-card-num" aria-hidden="true">11</div>
+                        </div>
+                        <div class="fp-card-body">
+                            <div class="fp-techs" aria-label="Tecnologias"><span
+                                    class="fp-tech">JavaScript</span><span class="fp-tech">SEO</span></div>
+                            <h3 class="fp-card-name" itemprop="name">Projeto 11</h3>
+                            <p class="fp-card-desc" itemprop="description">Descrição breve do projeto. Substitua com
+                                informações reais.</p>
+                            <div class="fp-card-footer">
+                                <a href="#" class="fp-link" rel="noopener" aria-label="Ver Projeto 11 ao vivo">Ver
+                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2"
+                                        viewBox="0 0 12 12" aria-hidden="true">
+                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
+                                    </svg></a>
+                                <a href="#" class="fp-gh-btn" rel="noopener" aria-label="GitHub do Projeto 11"><svg
+                                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </article> -->
+
+                </div>
+            </div>
+
+            <!-- DOTS -->
+            <div class="fp-dots fp-fade fp-d3" role="tablist" aria-label="Navegação por projeto" id="fp-dots"></div>
+
+            <!-- CTA FINAL -->
+            <div class="fp-cta-wrap fp-fade fp-d3">
+                <div class="fp-cta-line" aria-hidden="true"></div>
+                <a href="https://github.com/FernandoJesuss" class="fp-cta-btn" rel="noopener noreferrer" target="_blank"
+                    aria-label="Ver todos os projetos no GitHub">
+                    <svg fill="currentColor" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+                        <path
+                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                    </svg>
+                    Ver todos no GitHub
+                </a>
+                <div class="fp-cta-line" aria-hidden="true"></div>
+            </div>
+
+        </section>
+
+    </main>
+    
+
+    <!-------------- Fim da area de Projetos skill Portfolio section ------------------------------------------------->
+
         <!-------------------- About Section ------------------------------------------------>
         <section class="fs-sobre-section" id="sobre" aria-labelledby="titulo-sobre">
 
@@ -546,7 +1077,7 @@
                 <!-- HEADER -->
                 <div class="fesp-header">
                     <div class="fesp-tag" aria-hidden="true">Áreas de atuação</div>
-                    <h2 class="fesp-title" id="titulo-especialidades">Minhas<br><span>Especialidades.</span></h2>
+                    <h2 class="fesp-title" id="titulo-especialidades">My<br><span>Specialties.</span></h2>
                 </div>
 
                 <div class="cards-wrapper">
@@ -1290,449 +1821,7 @@
 
         <!------------------ Fim da Area de Habilidades Técnica ----------->
 
-        <!-- Area de Projetos skill Portfolio section --------------------------------------------------------------------------------------->
-        <section class="fp-section" id="projetos" aria-labelledby="titulo-projetos">
-
-            <!-- HEADER -->
-            <header class="fp-header fp-fade fp-d1">
-                <div>
-                    <div class="fp-tag" aria-hidden="true">O que eu farei por você</div>
-                    <h2 class="fp-title" id="titulo-projetos">Últimos<br><span>Projetos.</span></h2>
-                </div>
-                <div class="fp-header-right">
-                    <p class="fp-subtitle">Aplicações reais com código limpo, performance e atenção aos detalhes que
-                        fazem
-                        diferença.</p>
-                    <div class="fp-nav" role="group" aria-label="Navegação do carrossel">
-                        <button class="fp-nav-btn" id="fp-prev" aria-label="Projeto anterior">
-                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-                                aria-hidden="true">
-                                <polyline points="15 18 9 12 15 6" />
-                            </svg>
-                        </button>
-                        <span class="fp-nav-count" id="fp-counter" aria-live="polite"><span>1</span> / 11</span>
-                        <button class="fp-nav-btn" id="fp-next" aria-label="Próximo projeto">
-                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-                                aria-hidden="true">
-                                <polyline points="9 18 15 12 9 6" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </header>
-
-            <!-- CARROSSEL -->
-            <div class="fp-carousel-outer fp-fade fp-d2">
-                <div class="fp-carousel-track" id="fp-track" role="list" aria-label="Lista de projetos">
-
-                    <!-- ── CARD 1: Tesla Redesign ── -->
-                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
-                        <div class="fp-media">
-                            <img class="fp-media-img"
-                                src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=640&q=75"
-                                alt="Tesla Redesign — projeto de interface por Fernando Santos" width="640" height="400"
-                                loading="eager" decoding="async" itemprop="image">
-                            <video class="fp-media-video" src="./videos/op1.mp4" muted loop playsinline preload="none"
-                                aria-hidden="true"></video>
-                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
-                            <div class="fp-media-overlay" aria-hidden="true"></div>
-                            <div class="fp-card-num" aria-hidden="true">01</div>
-                        </div>
-                        <div class="fp-card-body">
-                            <div class="fp-techs" aria-label="Tecnologias"><span class="fp-tech">Html</span><span
-                                    class="fp-tech">CSS</span><span class="fp-tech">JavaScript</span></div>
-                            <h3 class="fp-card-name" itemprop="name">Tesla Redesign</h3>
-                            <p class="fp-card-desc" itemprop="description">Uma reimaginação ousada da landing page mais
-                                icônica da indústria automobilística. Performance que inspira o futuro.</p>
-                            <div class="fp-card-footer">
-                                <a href="https://pjt-clone-tesla.netlify.app/" target="_blank" class="fp-link"
-                                    rel="noopener noreferrer" aria-label="Ver Tesla Redesign ao vivo">Ver
-                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 12 12"
-                                        aria-hidden="true">
-                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
-                                    </svg></a>
-                                <a href="https://github.com/FernandoJesuss/ProjetosDev-Tesla" target="_blank"
-                                    class="fp-gh-btn" rel="noopener" aria-label="GitHub do Tesla Redesign"><svg
-                                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path
-                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
-                                    </svg></a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- ── CARD 2: Cardápio Burger ── -->
-                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
-                        <div class="fp-media">
-                            <img class="fp-media-img"
-                                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=640&q=75"
-                                alt="Cardápio Burger — sistema de lanchonete por Fernando Santos" width="640"
-                                height="400" loading="lazy" decoding="async" itemprop="image">
-                            <video class="fp-media-video" src="./videos/cardapio burger.mp4" muted loop playsinline
-                                preload="none" aria-hidden="true"></video>
-                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
-                            <div class="fp-media-overlay" aria-hidden="true"></div>
-                            <div class="fp-card-num" aria-hidden="true">02</div>
-                        </div>
-                        <div class="fp-card-body">
-                            <div class="fp-techs" aria-label="Tecnologias"><span class="fp-tech">HTML</span><span
-                                    class="fp-tech">CSS</span><span class="fp-tech">JavaScript</span></div>
-                            <h3 class="fp-card-name" itemprop="name">Cardápio Burger</h3>
-                            <p class="fp-card-desc" itemprop="description">Este projeto apresenta um cardápio de
-                                hambúrgueres, mostrando diferentes opções de produtos e seus preços. </p>
-                            <div class="fp-card-footer">
-                                <a href="https://subtle-halva-a658d9.netlify.app/" target="_blank" class="fp-link"
-                                    rel="noopener" aria-label="Ver Cardápio Burger ao vivo">Ver
-                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 12 12"
-                                        aria-hidden="true">
-                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
-                                    </svg></a>
-                                <a href="https://github.com/FernandoJesuss/Cardapio" target="_blank" class="fp-gh-btn"
-                                    rel="noopener" aria-label="GitHub do Cardápio Burger"><svg fill="currentColor"
-                                        viewBox="0 0 24 24" aria-hidden="true">
-                                        <path
-                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
-                                    </svg></a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- ── CARD 3: Mario Encanador ── -->
-                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
-                        <div class="fp-media">
-                            <img class="fp-media-img"
-                                src="https://images.unsplash.com/photo-1534423861386-85a16f5d13fd?w=640&q=75"
-                                alt="Mario Encanador — landing page por Fernando Santos" width="640" height="400"
-                                loading="lazy" decoding="async" itemprop="image">
-                            <video class="fp-media-video" src="./videos/mario bros.mp4" muted loop playsinline
-                                preload="none" aria-hidden="true"></video>
-                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
-                            <div class="fp-media-overlay" aria-hidden="true"></div>
-                            <div class="fp-card-num" aria-hidden="true">03</div>
-                        </div>
-                        <div class="fp-card-body">
-                            <div class="fp-techs" aria-label="Tecnologias"><span class="fp-tech">html</span><span
-                                    class="fp-tech">CSS3</span><span class="fp-tech">javascript</span></div>
-                            <h3 class="fp-card-name" itemprop="name">Mario Encanador</h3>
-                            <p class="fp-card-desc" itemprop="description">Landing page temática com animações CSS,
-                                design
-                                responsivo e SEO técnico completo.</p>
-                            <div class="fp-card-footer">
-                                <a href="https://pjt-mario.netlify.app/" target="_blank" class="fp-link" rel="noopener"
-                                    aria-label="Ver Mario Encanador ao vivo">Ver
-                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 12 12"
-                                        aria-hidden="true">
-                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
-                                    </svg></a>
-                                <a href="https://github.com/FernandoJesuss/Projeto_Mario" target="_blank"
-                                    class="fp-gh-btn" rel="noopener" aria-label="GitHub do Mario Encanador"><svg
-                                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path
-                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
-                                    </svg></a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- ── CARD 4: Café do Dev ── -->
-                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
-                        <div class="fp-media">
-                            <img class="fp-media-img"
-                                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=640&q=75"
-                                alt="Café do Dev — plataforma full-stack por Fernando Santos" width="640" height="400"
-                                loading="lazy" decoding="async" itemprop="image">
-                            <video class="fp-media-video" src="./videos/cafeteria.mp4" muted loop playsinline
-                                preload="none" aria-hidden="true"></video>
-                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
-                            <div class="fp-media-overlay" aria-hidden="true"></div>
-                            <div class="fp-card-num" aria-hidden="true">04</div>
-                        </div>
-                        <div class="fp-card-body">
-                            <div class="fp-techs" aria-label="Tecnologias"><span class="fp-tech">html</span><span
-                                    class="fp-tech">css</span><span class="fp-tech">javascript</span></div>
-                            <h3 class="fp-card-name" itemprop="name">Café do Dev</h3>
-                            <p class="fp-card-desc" itemprop="description">Este é o site de uma cafeteria, com destaque
-                                para o café como produto principal. Conheça nossos tipos: Americano, Expresso e Cappucci
-                            </p>
-                            <div class="fp-card-footer">
-                                <a href="https://pjt-cafeteria.netlify.app/" target="_blank" class="fp-link"
-                                    rel="noopener" aria-label="Ver Café do Dev ao vivo">Ver
-                                    projeto
-                                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 12 12"
-                                        aria-hidden="true">
-                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
-                                    </svg></a>
-                                <a href="https://github.com/FernandoJesuss/cafeteria" target="_blank" class="fp-gh-btn"
-                                    rel="noopener" aria-label="GitHub do Café do Dev"><svg fill="currentColor"
-                                        viewBox="0 0 24 24" aria-hidden="true">
-                                        <path
-                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
-                                    </svg></a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- ── CARDS 5–11 ── -->
-                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
-                        <div class="fp-media">
-                            <img class="fp-media-img"
-                                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=640&q=75"
-                                alt="Projeto 5 — desenvolvido por Fernando Santos" width="640" height="400"
-                                loading="lazy" decoding="async" itemprop="image">
-                            <video class="fp-media-video" src="./videos/conversor-moedas.mp4" muted loop playsinline
-                                preload="none" aria-hidden="true"></video>
-                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
-                            <div class="fp-media-overlay" aria-hidden="true"></div>
-                            <div class="fp-card-num" aria-hidden="true">05</div>
-                        </div>
-                        <div class="fp-card-body">
-                            <div class="fp-techs" aria-label="Tecnologias"><span class="fp-tech">html</span><span
-                                    class="fp-tech">css</span><span class="fp-tech">javascript</span></div>
-                            <h3 class="fp-card-name" itemprop="name">Projeto 05</h3>
-                            <p class="fp-card-desc" itemprop="description">O objetivo deste projeto é criar um site
-                                conversor de moedas. Basta inserir o valor e escolher a moeda de destino para obter a
-                                conversão.</p>
-                            <div class="fp-card-footer">
-                                <a href="https://pjt-converso-moedas.netlify.app/" target="_blank" class="fp-link"
-                                    rel="noopener" aria-label="Ver Projeto 05 ao vivo">Ver
-                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 12 12"
-                                        aria-hidden="true">
-                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
-                                    </svg></a>
-                                <a href="https://github.com/FernandoJesuss/Conversor_Moedas" target="_blank"
-                                    class="fp-gh-btn" rel="noopener" aria-label="GitHub do Projeto 05"><svg
-                                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path
-                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
-                                    </svg></a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
-                        <div class="fp-media">
-                            <img class="fp-media-img"
-                                src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=640&q=75"
-                                alt="Projeto 6 — desenvolvido por Fernando Santos" width="640" height="400"
-                                loading="lazy" decoding="async" itemprop="image">
-                            <video class="fp-media-video" src="" muted loop playsinline preload="none"
-                                aria-hidden="true"></video>
-                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
-                            <div class="fp-media-overlay" aria-hidden="true"></div>
-                            <div class="fp-card-num" aria-hidden="true">06</div>
-                        </div>
-                        <div class="fp-card-body">
-                            <div class="fp-techs" aria-label="Tecnologias"><span class="fp-tech">Node.js</span><span
-                                    class="fp-tech">Docker</span></div>
-                            <h3 class="fp-card-name" itemprop="name">Projeto 06</h3>
-                            <p class="fp-card-desc" itemprop="description">Descrição breve do projeto. Substitua com
-                                informações reais.</p>
-                            <div class="fp-card-footer">
-                                <a href="#" class="fp-link" rel="noopener" aria-label="Ver Projeto 06 ao vivo">Ver
-                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2"
-                                        viewBox="0 0 12 12" aria-hidden="true">
-                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
-                                    </svg></a>
-                                <a href="#" class="fp-gh-btn" rel="noopener" aria-label="GitHub do Projeto 06"><svg
-                                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path
-                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
-                                    </svg></a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
-                        <div class="fp-media">
-                            <img class="fp-media-img"
-                                src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=640&q=75"
-                                alt="Projeto 7 — desenvolvido por Fernando Santos" width="640" height="400"
-                                loading="lazy" decoding="async" itemprop="image">
-                            <video class="fp-media-video" src="" muted loop playsinline preload="none"
-                                aria-hidden="true"></video>
-                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
-                            <div class="fp-media-overlay" aria-hidden="true"></div>
-                            <div class="fp-card-num" aria-hidden="true">07</div>
-                        </div>
-                        <div class="fp-card-body">
-                            <div class="fp-techs" aria-label="Tecnologias"><span class="fp-tech">React</span><span
-                                    class="fp-tech">AWS</span></div>
-                            <h3 class="fp-card-name" itemprop="name">Projeto 07</h3>
-                            <p class="fp-card-desc" itemprop="description">Descrição breve do projeto. Substitua com
-                                informações reais.</p>
-                            <div class="fp-card-footer">
-                                <a href="#" class="fp-link" rel="noopener" aria-label="Ver Projeto 07 ao vivo">Ver
-                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2"
-                                        viewBox="0 0 12 12" aria-hidden="true">
-                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
-                                    </svg></a>
-                                <a href="#" class="fp-gh-btn" rel="noopener" aria-label="GitHub do Projeto 07"><svg
-                                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path
-                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
-                                    </svg></a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
-                        <div class="fp-media">
-                            <img class="fp-media-img"
-                                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=640&q=75"
-                                alt="Projeto 8 — desenvolvido por Fernando Santos" width="640" height="400"
-                                loading="lazy" decoding="async" itemprop="image">
-                            <video class="fp-media-video" src="" muted loop playsinline preload="none"
-                                aria-hidden="true"></video>
-                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
-                            <div class="fp-media-overlay" aria-hidden="true"></div>
-                            <div class="fp-card-num" aria-hidden="true">08</div>
-                        </div>
-                        <div class="fp-card-body">
-                            <div class="fp-techs" aria-label="Tecnologias"><span
-                                    class="fp-tech">JavaScript</span><span class="fp-tech">MongoDB</span></div>
-                            <h3 class="fp-card-name" itemprop="name">Projeto 08</h3>
-                            <p class="fp-card-desc" itemprop="description">Descrição breve do projeto. Substitua com
-                                informações reais.</p>
-                            <div class="fp-card-footer">
-                                <a href="#" class="fp-link" rel="noopener" aria-label="Ver Projeto 08 ao vivo">Ver
-                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2"
-                                        viewBox="0 0 12 12" aria-hidden="true">
-                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
-                                    </svg></a>
-                                <a href="#" class="fp-gh-btn" rel="noopener" aria-label="GitHub do Projeto 08"><svg
-                                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path
-                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
-                                    </svg></a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
-                        <div class="fp-media">
-                            <img class="fp-media-img"
-                                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=640&q=75"
-                                alt="Projeto 9 — desenvolvido por Fernando Santos" width="640" height="400"
-                                loading="lazy" decoding="async" itemprop="image">
-                            <video class="fp-media-video" src="" muted loop playsinline preload="none"
-                                aria-hidden="true"></video>
-                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
-                            <div class="fp-media-overlay" aria-hidden="true"></div>
-                            <div class="fp-card-num" aria-hidden="true">09</div>
-                        </div>
-                        <div class="fp-card-body">
-                            <div class="fp-techs" aria-label="Tecnologias"><span
-                                    class="fp-tech">TypeScript</span><span class="fp-tech">Docker</span></div>
-                            <h3 class="fp-card-name" itemprop="name">Projeto 09</h3>
-                            <p class="fp-card-desc" itemprop="description">Descrição breve do projeto. Substitua com
-                                informações reais.</p>
-                            <div class="fp-card-footer">
-                                <a href="#" class="fp-link" rel="noopener" aria-label="Ver Projeto 09 ao vivo">Ver
-                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2"
-                                        viewBox="0 0 12 12" aria-hidden="true">
-                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
-                                    </svg></a>
-                                <a href="#" class="fp-gh-btn" rel="noopener" aria-label="GitHub do Projeto 09"><svg
-                                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path
-                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
-                                    </svg></a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
-                        <div class="fp-media">
-                            <img class="fp-media-img"
-                                src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=640&q=75"
-                                alt="Projeto 10 — desenvolvido por Fernando Santos" width="640" height="400"
-                                loading="lazy" decoding="async" itemprop="image">
-                            <video class="fp-media-video" src="" muted loop playsinline preload="none"
-                                aria-hidden="true"></video>
-                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
-                            <div class="fp-media-overlay" aria-hidden="true"></div>
-                            <div class="fp-card-num" aria-hidden="true">10</div>
-                        </div>
-                        <div class="fp-card-body">
-                            <div class="fp-techs" aria-label="Tecnologias"><span class="fp-tech">React</span><span
-                                    class="fp-tech">Node.js</span></div>
-                            <h3 class="fp-card-name" itemprop="name">Projeto 10</h3>
-                            <p class="fp-card-desc" itemprop="description">Descrição breve do projeto. Substitua com
-                                informações reais.</p>
-                            <div class="fp-card-footer">
-                                <a href="#" class="fp-link" rel="noopener" aria-label="Ver Projeto 10 ao vivo">Ver
-                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2"
-                                        viewBox="0 0 12 12" aria-hidden="true">
-                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
-                                    </svg></a>
-                                <a href="#" class="fp-gh-btn" rel="noopener" aria-label="GitHub do Projeto 10"><svg
-                                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path
-                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
-                                    </svg></a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="fp-card" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
-                        <div class="fp-media">
-                            <img class="fp-media-img"
-                                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=640&q=75"
-                                alt="Projeto 11 — desenvolvido por Fernando Santos" width="640" height="400"
-                                loading="lazy" decoding="async" itemprop="image">
-                            <video class="fp-media-video" src="" muted loop playsinline preload="none"
-                                aria-hidden="true"></video>
-                            <div class="fp-video-badge" aria-hidden="true">Preview</div>
-                            <div class="fp-media-overlay" aria-hidden="true"></div>
-                            <div class="fp-card-num" aria-hidden="true">11</div>
-                        </div>
-                        <div class="fp-card-body">
-                            <div class="fp-techs" aria-label="Tecnologias"><span
-                                    class="fp-tech">JavaScript</span><span class="fp-tech">SEO</span></div>
-                            <h3 class="fp-card-name" itemprop="name">Projeto 11</h3>
-                            <p class="fp-card-desc" itemprop="description">Descrição breve do projeto. Substitua com
-                                informações reais.</p>
-                            <div class="fp-card-footer">
-                                <a href="#" class="fp-link" rel="noopener" aria-label="Ver Projeto 11 ao vivo">Ver
-                                    projeto <svg fill="none" stroke="currentColor" stroke-width="2"
-                                        viewBox="0 0 12 12" aria-hidden="true">
-                                        <path d="M1 11L11 1M11 1H4M11 1v7" />
-                                    </svg></a>
-                                <a href="#" class="fp-gh-btn" rel="noopener" aria-label="GitHub do Projeto 11"><svg
-                                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path
-                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
-                                    </svg></a>
-                            </div>
-                        </div>
-                    </article> -->
-
-                </div>
-            </div>
-
-            <!-- DOTS -->
-            <div class="fp-dots fp-fade fp-d3" role="tablist" aria-label="Navegação por projeto" id="fp-dots"></div>
-
-            <!-- CTA FINAL -->
-            <div class="fp-cta-wrap fp-fade fp-d3">
-                <div class="fp-cta-line" aria-hidden="true"></div>
-                <a href="https://github.com/FernandoJesuss" class="fp-cta-btn" rel="noopener noreferrer" target="_blank"
-                    aria-label="Ver todos os projetos no GitHub">
-                    <svg fill="currentColor" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
-                        <path
-                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
-                    </svg>
-                    Ver todos no GitHub
-                </a>
-                <div class="fp-cta-line" aria-hidden="true"></div>
-            </div>
-
-        </section>
-
-    </main>
-    <!-- CORRIGIDO: </main> fechando ANTES do footer, englobando todas as seções -->
-
-    <!-------------- Fim da area de Projetos skill Portfolio section ------------------------------------------------->
+     
 
     <!-- ------------ Area de Contato section ------------------------------------------------------------------------------>
     <div id="fsft-root" data-lang="pt">
