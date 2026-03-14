@@ -632,6 +632,7 @@ function trapFocus(modal) {
 /*  Fim Carrossel da área de Projetos  */
 
 
+
 /*==========================================
   Footer — Toggle de Idioma PT/EN
 ============================================*/

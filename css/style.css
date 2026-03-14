@@ -5330,8 +5330,6 @@ select {
 /*fim*/
 
 
-
-
 /* ═══════════════════════════════════════════
    PROJETOS (fp-section)
 ═══════════════════════════════════════════ */
@@ -5852,6 +5850,201 @@ select {
         width: 280px;
     }
 }
+
+/*linha*/
+/* ── Grid ── */
+.hb-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    align-items: start;
+}
+ 
+/* ── Step wrapper ── */
+.hb-step {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+}
+ 
+/* ── Card ── */
+.hb-card {
+    flex: 1;
+    position: relative;
+    background: var(--fp-surface);
+    border: 1px solid var(--fp-border);
+    border-radius: 12px;
+    padding: 28px 24px 24px;
+    overflow: hidden;
+    transition: border-color .3s, transform .3s, box-shadow .3s;
+    cursor: default;
+}
+ 
+.hb-card:hover {
+    border-color: var(--fp-cyan-brd);
+    transform: translateY(-6px);
+    box-shadow: 0 24px 60px rgba(0,0,0,.4), 0 0 0 1px rgba(0,194,255,.08);
+}
+ 
+/* Linha cyan no topo ao hover */
+.hb-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--fp-cyan), transparent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .4s cubic-bezier(.22,1,.36,1);
+}
+ 
+.hb-card:hover::before { transform: scaleX(1); }
+ 
+/* Glow de fundo ao hover */
+.hb-card-glow {
+    position: absolute;
+    top: -40px; left: -40px;
+    width: 120px; height: 120px;
+    background: radial-gradient(circle, rgba(0,194,255,.08) 0%, transparent 70%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .4s;
+}
+ 
+.hb-card:hover .hb-card-glow { opacity: 1; }
+ 
+/* ── Topo do card: ícone + número decorativo ── */
+.hb-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+ 
+/* ── Ícone ── */
+.hb-icon-wrap {
+    width: 44px; height: 44px;
+    border-radius: 10px;
+    background: var(--fp-cyan-dim);
+    border: 1px solid var(--fp-cyan-brd);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--fp-cyan);
+    transition: background .25s, box-shadow .25s;
+    flex-shrink: 0;
+}
+ 
+.hb-icon-wrap svg { width: 18px; height: 18px; }
+ 
+.hb-card:hover .hb-icon-wrap {
+    background: rgba(0,194,255,.2);
+    box-shadow: 0 0 24px rgba(0,194,255,.2);
+}
+ 
+/* ── Número decorativo grande ── */
+.hb-num-bg {
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: -.04em;
+    color: rgba(0,194,255,.06);
+    line-height: 1;
+    user-select: none;
+    transition: color .3s;
+}
+ 
+.hb-card:hover .hb-num-bg { color: rgba(0,194,255,.1); }
+ 
+/* ── Número pequeno ── */
+.hb-num {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .15em;
+    color: var(--fp-cyan);
+    opacity: .6;
+    margin-bottom: 6px;
+}
+ 
+/* ── Título ── */
+.hb-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--fp-white);
+    letter-spacing: -.01em;
+    margin: 0 0 10px;
+    line-height: 1.2;
+}
+ 
+/* ── Descrição ── */
+.hb-desc {
+    font-size: 12.5px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--fp-muted);
+    margin: 0 0 18px;
+}
+ 
+/* ── Tags ── */
+.hb-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+ 
+.hb-tag {
+    padding: 3px 9px;
+    background: rgba(255,255,255,.03);
+    border: 1px solid var(--fp-border);
+    border-radius: 4px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--fp-muted);
+    transition: border-color .2s, color .2s, background .2s;
+}
+ 
+.hb-card:hover .hb-tag {
+    border-color: var(--fp-cyan-brd);
+    color: var(--fp-cyan);
+    background: var(--fp-cyan-dim);
+}
+ 
+/* ── Seta entre cards ── */
+.hb-arrow {
+    flex-shrink: 0;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 22px;
+    color: rgba(0,194,255,.2);
+    transition: color .3s;
+}
+ 
+.hb-arrow svg { width: 14px; height: 14px; }
+.hb-step:hover .hb-arrow { color: rgba(0,194,255,.5); }
+ 
+/* ── Responsive ── */
+@media (max-width: 960px) {
+    .hb-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+    .hb-step:nth-child(2) .hb-arrow,
+    .hb-step:last-child .hb-arrow { display: none; }
+}
+ 
+@media (max-width: 540px) {
+    .hb-grid { grid-template-columns: 1fr; gap: 12px; }
+    .hb-arrow { display: none; }
+}
+
+/*linha fim*/
+
+
+
+
+
 
 /* ═══════════════════════════════════════════
    FOOTER
