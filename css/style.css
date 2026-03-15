@@ -6171,7 +6171,7 @@ select {
 }
  
 /* ── Desafios ── */
-.db-challenges { display: flex; flex-direction: column; gap: 16px; }
+.db-challenges { display: flex; flex-direction: column; gap: 16px;}
 .db-challenge {
     display: grid; grid-template-columns: 48px 1fr; gap: 20px;
     background: var(--fp-surface); border: 1px solid var(--fp-border);
@@ -6184,12 +6184,13 @@ select {
 .db-challenge-desc {
     font-size: 12.5px; font-weight: 300; line-height: 1.7;
     color: var(--fp-muted); margin-bottom: 8px;
-    display: flex; gap: 8px; align-items: baseline;
+    display: flex; gap: 8px; align-items: flex-start; flex-wrap: wrap;
 }
 .db-tag-problem, .db-tag-solution {
     flex-shrink: 0; font-size: 9px; font-weight: 700;
     letter-spacing: .1em; text-transform: uppercase;
     padding: 2px 7px; border-radius: 3px;
+    margin-top: 3px;
 }
 .db-tag-problem { background: rgba(239,68,68,.1); border: 1px solid rgba(239,68,68,.2); color: #f87171; }
 .db-tag-solution { background: rgba(34,197,94,.1); border: 1px solid rgba(34,197,94,.2); color: #4ade80; }
@@ -6198,7 +6199,7 @@ select {
     color: var(--fp-cyan); padding: 1px 5px; border-radius: 3px;
     font-size: 11px; font-family: monospace;
 }
- 
+
 /* ── Responsive ── */
 @media (max-width: 1024px) {
     .db-tech-grid { grid-template-columns: repeat(3, 1fr); }
@@ -6213,8 +6214,9 @@ select {
 @media (max-width: 540px) {
     .db-tech-grid { grid-template-columns: repeat(2, 1fr); }
     .db-screenshots { grid-template-columns: 1fr; }
-    .db-challenge { grid-template-columns: 1fr; }
+    .db-challenge { grid-template-columns: 1fr; padding: 20px 16px; }
     .db-challenge-num { display: none; }
+    .db-challenge-desc { gap: 6px; }
 }
 /*fim devburguer*/
 
