@@ -489,6 +489,20 @@ function trapFocus(modal) {
 
 /*  Fim do Abre e Fecha Do Modal de Especialidades  */
 
+/* destaque DevBurguer*/
+(function() {
+    const browser = document.querySelector('#destaque .db-browser');
+    if (!browser) return;
+    const video = browser.querySelector('video');
+    if (!video || !video.getAttribute('src')) return;
+    browser.addEventListener('mouseenter', () => { video.load(); video.play().catch(() => {}); });
+    browser.addEventListener('mouseleave', () => { video.pause(); video.currentTime = 0; });
+})();
+
+/*fim de destaque*/
+  
+
+
 
 /*==========================================
   Carrossel da área de Projetos

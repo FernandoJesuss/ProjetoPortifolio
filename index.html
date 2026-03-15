@@ -352,83 +352,261 @@
         </section>
 
         <!-- Area de Projetos skill Portfolio section --------------------------------------------------------------------------------------->
+        <!-- ══ DEVBURGUER CASE STUDY — cole DEPOIS da section#destaque ══ -->
+        <section class="fp-section" id="destaque" aria-labelledby="titulo-devburguer" style="padding: 120px 24px;">
 
-        <!-- ══ FEATURED WORK — cole ANTES da section#projetos ══ -->
-        <section class="fv-section" id="destaque" aria-labelledby="titulo-featured">
+            <!-- HEADER -->
+            <header class="fp-header fp-fade fp-d1">
+                <div>
+                    <div class="fp-tag" aria-hidden="true">Case Study · Projeto Principal</div>
+                    <h2 class="fp-title" id="titulo-devburguer">Dev<span>Burguer.</span></h2>
+                </div>
+                <div class="fp-header-right">
+                    <p class="fp-subtitle">Sistema completo de lanchonete digital — do pedido ao pagamento, em produção.
+                    </p>
+                    <div class="db-links">
+                        <a href="https://devburger-app.netlify.app/" target="_blank" rel="noopener"
+                            class="fp-cta-btn" style="text-decoration:none;">
+                            Ver Projeto ↗
+                        </a>
+                        <a href="https://github.com/FernandoJesuss/devburger_interface" target="_blank" rel="noopener"
+                            class="fp-gh-btn" aria-label="GitHub do DevBurguer">
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </header>
 
-            <div class="fv-wrapper">
+            <!-- HERO: browser + stats -->
+            <div class="db-hero fp-fade fp-d2">
 
-                <!-- HEADER — mesmo estilo da área de projetos -->
-                <header class="fv-header fv-fade fv-d1">
-                    <div class="fp-tag" aria-hidden="true">Projetos em Destaque</div>
-                    <h2 class="fp-title" id="titulo-featured">Featured<br><span>Work.</span></h2>
-                </header>
-
-                <!-- 3 VÍDEOS -->
-                <div class="fv-grid fv-fade fv-d2">
-
-                    <!-- ── DevBurguer ── -->
-                    <div class="fv-item">
-                        <div class="fv-browser">
-                            <div class="fv-bar">
-                                <span class="fv-dot fv-r"></span>
-                                <span class="fv-dot fv-y"></span>
-                                <span class="fv-dot fv-g"></span>
-                                <span class="fv-urlbar">devburger.app</span>
-                            </div>
-                            <div class="fv-screen">
-                                <video src="./videos/devburger.mp4" autoplay muted loop playsinline
-                                    aria-label="Preview DevBurguer"></video>
+                <div class="db-preview">
+                    <div class="db-browser">
+                        <div class="db-browser-bar">
+                            <span class="db-dot db-r"></span>
+                            <span class="db-dot db-y"></span>
+                            <span class="db-dot db-g"></span>
+                            <span class="db-urlbar">devburger-interface-pi.vercel.app</span>
+                        </div>
+                        <div class="db-screen">
+                            <img src="./img/home_devburguer.png"
+                                alt="DevBurguer — tela home" loading="lazy" decoding="async"
+                                onerror="this.src='https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=900&q=80'">
+                            <video src="./videos/devburguer_destaque.mp4" muted loop playsinline preload="none"
+                                aria-hidden="true"></video>
+                            <div class="db-play-hint" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                                Preview
                             </div>
                         </div>
-                        <div class="fv-info">
-                            <h3 class="fv-name">DevBurguer</h3>
-                            <p class="fv-techs">React · Node.js · Stripe</p>
+                    </div>
+                </div>
+
+                <div class="db-stats-col">
+                    <div class="db-stat-card">
+                        <div class="db-stat-num">2</div>
+                        <div class="db-stat-label">Perfis de acesso<span>Cliente · Admin</span></div>
+                    </div>
+                    <div class="db-stat-card">
+                        <div class="db-stat-num">JWT</div>
+                        <div class="db-stat-label">Autenticação<span>+ Bcrypt</span></div>
+                    </div>
+                    <div class="db-stat-card">
+                        <div class="db-stat-num">Stripe</div>
+                        <div class="db-stat-label">Pagamentos<span>Tempo real</span></div>
+                    </div>
+                    <div class="db-stat-card">
+                        <div class="db-stat-num">Full</div>
+                        <div class="db-stat-label">Stack<span>Front + Back</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STACK -->
+            <div class="db-block fp-fade fp-d2">
+                <div class="db-block-label">Stack Tecnológico</div>
+                <div class="db-tech-grid" role="list">
+
+                    <div class="db-tech-item db-fe" role="listitem">
+                        <div class="db-tech-icon">⚛️</div>
+                        <div class="db-tech-name">React.js</div>
+                        <div class="db-tech-desc">Frontend</div>
+                    </div>
+                    <div class="db-tech-item db-fe" role="listitem">
+                        <div class="db-tech-icon">🎨</div>
+                        <div class="db-tech-name">Styled Components</div>
+                        <div class="db-tech-desc">Estilização</div>
+                    </div>
+                    <div class="db-tech-item db-fe" role="listitem">
+                        <div class="db-tech-icon">🔄</div>
+                        <div class="db-tech-name">Context API</div>
+                        <div class="db-tech-desc">Estado global</div>
+                    </div>
+                    <div class="db-tech-item db-be" role="listitem">
+                        <div class="db-tech-icon">🟢</div>
+                        <div class="db-tech-name">Node.js</div>
+                        <div class="db-tech-desc">Backend</div>
+                    </div>
+                    <div class="db-tech-item db-be" role="listitem">
+                        <div class="db-tech-icon">⚡</div>
+                        <div class="db-tech-name">Express.js</div>
+                        <div class="db-tech-desc">Framework</div>
+                    </div>
+                    <div class="db-tech-item db-be" role="listitem">
+                        <div class="db-tech-icon">🐘</div>
+                        <div class="db-tech-name">PostgreSQL</div>
+                        <div class="db-tech-desc">Banco relacional</div>
+                    </div>
+                    <div class="db-tech-item db-be" role="listitem">
+                        <div class="db-tech-icon">🔗</div>
+                        <div class="db-tech-name">Sequelize</div>
+                        <div class="db-tech-desc">ORM</div>
+                    </div>
+                    <div class="db-tech-item db-pay" role="listitem">
+                        <div class="db-tech-icon">💳</div>
+                        <div class="db-tech-name">Stripe</div>
+                        <div class="db-tech-desc">Pagamentos</div>
+                    </div>
+                    <!-- <div class="db-tech-item db-ops" role="listitem">
+                        <div class="db-tech-icon">☁️</div>
+                        <div class="db-tech-name">Cloudinary</div>
+                        <div class="db-tech-desc">Imagens</div>
+                    </div> -->
+
+                </div>
+            </div>
+
+            <!-- SCREENSHOTS REAIS -->
+            <div class="db-block fp-fade fp-d3">
+                <div class="db-block-label">Interface</div>
+                <div class="db-screenshots">
+
+                    <div class="db-screenshot">
+                        <img src="./img/login_devburguer.png"
+                            alt="DevBurguer — tela de login" loading="lazy" decoding="async"
+                            onerror="this.src='#'">
+                        <div class="db-screenshot-label">Login</div>
+                    </div>
+
+                    <div class="db-screenshot">
+                        <img src="./img/cardapio_devburguer.png"
+                            alt="DevBurguer — cardápio" loading="lazy" decoding="async"
+                            onerror="this.src='https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=640&q=75'">
+                        <div class="db-screenshot-label">Cardápio</div>
+                    </div>
+
+                    <div class="db-screenshot">
+                        <img src="./img/carrinho_devburguer.png"
+                            alt="DevBurguer — carrinho" loading="lazy" decoding="async"
+                            onerror="this.src='https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=640&q=75'">
+                        <div class="db-screenshot-label">Carrinho</div>
+                    </div>
+
+                    <div class="db-screenshot">
+                        <img src="./img/pagamento_deburguer.png"
+                            alt="DevBurguer — pagamento" loading="lazy" decoding="async"
+                            onerror="this.src='https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=640&q=75'">
+                        <div class="db-screenshot-label">Pagamento</div>
+                    </div>
+
+                    <div class="db-screenshot">
+                        <img src="./img/confirmação_devburguer.png"
+                            alt="DevBurguer — confirmação" loading="lazy" decoding="async"
+                            onerror="this.src='https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=640&q=75'">
+                        <div class="db-screenshot-label">Confirmação</div>
+                    </div>
+
+                    <div class="db-screenshot">
+                        <img src="./img/painel_admin_devburguer.png"
+                            alt="DevBurguer — painel admin" loading="lazy" decoding="async"
+                            onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=640&q=75'">
+                        <div class="db-screenshot-label">Painel Admin</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- DESAFIOS E SOLUÇÕES -->
+            <div class="db-block fp-fade fp-d3">
+                <div class="db-block-label">Desafios & Soluções</div>
+                <div class="db-challenges">
+
+                    <div class="db-challenge">
+                        <div class="db-challenge-num">01</div>
+                        <div class="db-challenge-content">
+                            <div class="db-challenge-title">Autenticação com dois perfis distintos</div>
+                            <div class="db-challenge-desc">
+                                <span class="db-tag-problem">Problema</span>
+                                Cliente e admin precisavam de rotas e permissões completamente diferentes sem
+                                complexidade desnecessária.
+                            </div>
+                            <div class="db-challenge-desc">
+                                <span class="db-tag-solution">Solução</span>
+                                JWT com <code>role</code> no payload, Bcrypt para senhas e middleware de verificação nas
+                                rotas protegidas — seguro e escalável.
+                            </div>
                         </div>
                     </div>
 
-                    <!-- ── Conversor de Moedas ── -->
-                    <div class="fv-item">
-                        <div class="fv-browser">
-                            <div class="fv-bar">
-                                <span class="fv-dot fv-r"></span>
-                                <span class="fv-dot fv-y"></span>
-                                <span class="fv-dot fv-g"></span>
-                                <span class="fv-urlbar">conversor-moedas.app</span>
+                    <div class="db-challenge">
+                        <div class="db-challenge-num">02</div>
+                        <div class="db-challenge-content">
+                            <div class="db-challenge-title">Pagamento assíncrono com confirmação real</div>
+                            <div class="db-challenge-desc">
+                                <span class="db-tag-problem">Problema</span>
+                                Confirmar pagamento apenas após o Stripe processar de fato — não só na resposta do
+                                frontend.
                             </div>
-                            <div class="fv-screen">
-                                <video src="./videos/conversor-moedas.mp4" autoplay muted loop playsinline
-                                    aria-label="Preview Conversor de Moedas"></video>
+                            <div class="db-challenge-desc">
+                                <span class="db-tag-solution">Solução</span>
+                                Integração com <code>PaymentIntent</code> do Stripe no backend, com feedback visual em
+                                tempo real para o usuário.
                             </div>
-                        </div>
-                        <div class="fv-info">
-                            <h3 class="fv-name">Conversor de Moedas</h3>
-                            <p class="fv-techs">HTML · CSS · JavaScript</p>
                         </div>
                     </div>
 
-                    <!-- ── Cardápio Burger ── -->
-                    <div class="fv-item">
-                        <div class="fv-browser">
-                            <div class="fv-bar">
-                                <span class="fv-dot fv-r"></span>
-                                <span class="fv-dot fv-y"></span>
-                                <span class="fv-dot fv-g"></span>
-                                <span class="fv-urlbar">cardapio-burger.app</span>
+                    <div class="db-challenge">
+                        <div class="db-challenge-num">03</div>
+                        <div class="db-challenge-content">
+                            <div class="db-challenge-title">Painel admin com fluxo reduzido</div>
+                            <div class="db-challenge-desc">
+                                <span class="db-tag-problem">Problema</span>
+                                O painel inicial tinha muitas telas para concluir um pedido — fricção desnecessária para
+                                o operador.
                             </div>
-                            <div class="fv-screen">
-                                <video src="./videos/cardapio burger.mp4" autoplay muted loop playsinline
-                                    aria-label="Preview Cardápio Burger"></video>
+                            <div class="db-challenge-desc">
+                                <span class="db-tag-solution">Solução</span>
+                                Mapeei o fluxo real antes de codar. Resultado: <strong>reduzi de 6 para 3 telas</strong>
+                                sem perder funcionalidade, com menos bug e mais usabilidade.
                             </div>
                         </div>
-                        <div class="fv-info">
-                            <h3 class="fv-name">Cardápio Burger</h3>
-                            <p class="fv-techs">HTML · CSS · JavaScript</p>
+                    </div>
+
+                    <div class="db-challenge">
+                        <div class="db-challenge-num">04</div>
+                        <div class="db-challenge-content">
+                            <div class="db-challenge-title">Gerenciamento de estado do carrinho</div>
+                            <div class="db-challenge-desc">
+                                <span class="db-tag-problem">Problema</span>
+                                O carrinho precisava ser acessível em múltiplas rotas, com atualização em tempo real de
+                                quantidades e totais.
+                            </div>
+                            <div class="db-challenge-desc">
+                                <span class="db-tag-solution">Solução</span>
+                                <code>CartContext</code> com Context API — estado global limpo, sem Redux, com
+                                totalização automática e controle de quantidade reativo.
+                            </div>
                         </div>
                     </div>
 
                 </div>
             </div>
+
         </section>
 
         <!-- ══ Fim Projetos em destaque FEATURED WORK  ══ -->
@@ -2096,28 +2274,27 @@
                                         data-fsft-lang="pt">Destaque</span><span data-fsft-lang="en">Emphasis</span></a>
                             </li>
 
-                            <li><a href="#projetos" class="fsft-nav-anchor"><span data-fsft-lang="pt">Projetos</span><span
-                                        data-fsft-lang="en">Projects</span></a></li>
+                            <li><a href="#projetos" class="fsft-nav-anchor"><span
+                                        data-fsft-lang="pt">Projetos</span><span data-fsft-lang="en">Projects</span></a>
+                            </li>
 
-                                <li><a href="#processo" class="fsft-nav-anchor"><span
-                                            data-fsft-lang="pt">Processo</span><span
-                                            data-fsft-lang="en">Process</span></a>
-                                </li>
+                            <li><a href="#processo" class="fsft-nav-anchor"><span
+                                        data-fsft-lang="pt">Processo</span><span data-fsft-lang="en">Process</span></a>
+                            </li>
 
-                                <li><a href="#sobre" class="fsft-nav-anchor"><span data-fsft-lang="pt">Sobre</span><span
-                                            data-fsft-lang="en">About</span></a></li>
-                                <li><a href="#especialidades" class="fsft-nav-anchor"><span
-                                            data-fsft-lang="pt">Especialidades</span><span
-                                            data-fsft-lang="en">Specialties</span></a></li>
+                            <li><a href="#sobre" class="fsft-nav-anchor"><span data-fsft-lang="pt">Sobre</span><span
+                                        data-fsft-lang="en">About</span></a></li>
+                            <li><a href="#especialidades" class="fsft-nav-anchor"><span
+                                        data-fsft-lang="pt">Especialidades</span><span
+                                        data-fsft-lang="en">Specialties</span></a></li>
 
-                                <li><a href="#habilidades" class="fsft-nav-anchor"><span
-                                            data-fsft-lang="pt">Habilidades</span><span
-                                            data-fsft-lang="en">Skills</span></a></li>
+                            <li><a href="#habilidades" class="fsft-nav-anchor"><span
+                                        data-fsft-lang="pt">Habilidades</span><span
+                                        data-fsft-lang="en">Skills</span></a></li>
 
 
-                                <li><a href="#contato" class="fsft-nav-anchor"><span
-                                            data-fsft-lang="pt">Contato</span><span
-                                            data-fsft-lang="en">Contact</span></a></li>
+                            <li><a href="#contato" class="fsft-nav-anchor"><span data-fsft-lang="pt">Contato</span><span
+                                        data-fsft-lang="en">Contact</span></a></li>
                         </ul>
                     </nav>
 
