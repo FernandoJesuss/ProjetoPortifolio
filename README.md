@@ -20,6 +20,18 @@
 
 ---
 
+## 🌐 Preview do Portfólio
+
+<div align="center">
+
+<a href="https://fsantos-dev.netlify.app/">
+  <img src="https://raw.githubusercontent.com/FernandoJesuss/ProjetoPortifolio/main/src/assets/portfolio-home.png" width="900"/>
+</a>
+
+</div>
+
+---
+
 ## Sobre Mim
 
 Frontend Developer com **2+ anos em desenvolvimento web** e **10+ anos de experiência em TI corporativa** — incluindo passagem por multinacional em suporte de automação bancária e sistemas críticos.
