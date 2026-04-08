@@ -32,6 +32,17 @@
 
 ---
 
+### 📱 Versão Mobile
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/FernandoJesuss/ProjetoPortifolio/main/src/assets/portfolio-mobile.png" width="300"/>
+
+</div>
+
+
+---
+
 ## Sobre Mim
 
 Frontend Developer com **2+ anos em desenvolvimento web** e **10+ anos de experiência em TI corporativa** — incluindo passagem por multinacional em suporte de automação bancária e sistemas críticos.
