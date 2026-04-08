@@ -36,7 +36,7 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/FernandoJesuss/ProjetoPortifolio/main/src/assets/portfolio-mobile.png" width="300"/>
+<img src="https://github.com/FernandoJesuss/ProjetoPortifolio/blob/main/img/portfolio_mobile.png" width="300"/>
 
 </div>
 
