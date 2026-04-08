@@ -25,7 +25,7 @@
 <div align="center">
 
 <a href="https://fsantos-dev.netlify.app/">
-  <img src="https://raw.githubusercontent.com/FernandoJesuss/ProjetoPortifolio/main/src/assets/portfolio-home.png" width="900"/>
+  <img src="https://github.com/FernandoJesuss/ProjetoPortifolio/blob/main/img/portfolio_one.png" width="900"/>
 </a>
 
 </div>
