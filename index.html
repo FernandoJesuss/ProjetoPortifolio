@@ -1400,12 +1400,12 @@
                 <div class="cards-wrapper">
 
                     <!-- ===================== CARD 1 ===================== -->
-                    <!-- CORRIGIDO: tabindex + role="button" + onkeydown para navegação por teclado -->
+                    
                     <div class="profile-card" tabindex="0" role="button"
                         aria-label="Abrir especialidade: Product Thinking"
                         onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal('modal-1')}">
                         <div class="poster">
-                            <!-- CORRIGIDO: alt descritivo -->
+                            
                             <img src="./img/performace.png"
                                 alt="Ilustração de product thinking e mapeamento de fluxo de produto"
                                 class="poster-img">
@@ -1431,14 +1431,14 @@
                     </div>
 
                     <!-- ===================== MODAL 1 ===================== -->
-                    <!-- CORRIGIDO: role="dialog" + aria-modal + aria-labelledby -->
+                    
                     <div class="overlay" id="modal-1" role="dialog" aria-modal="true" aria-labelledby="modal-1-title"
                         onclick="handleOverlayClick(event, 'modal-1')">
                         <div class="modal-form">
                             <div class="modal-header">
                                 <div class="header-left">
                                     <span class="modal-eyebrow"></span>
-                                    <!-- CORRIGIDO: id para aria-labelledby -->
+                                    
                                     <h1 class="modal-title" id="modal-1-title">Product Thinking</h1>
                                 </div>
                                 <button class="close-btn" onclick="closeModal('modal-1')"
@@ -1524,7 +1524,7 @@
                         aria-label="Abrir especialidade: Frontend Engineering"
                         onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal('modal-2')}">
                         <div class="poster">
-                            <!-- CORRIGIDO: alt descritivo -->
+                            
                             <img src="./img/ui_tree.png"
                                 alt="Ilustração de desenvolvimento frontend com React e TypeScript" class="poster-img">
                         </div>
@@ -1645,7 +1645,7 @@
                         aria-label="Abrir especialidade: Backend e Architecture"
                         onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal('modal-3')}">
                         <div class="poster">
-                            <!-- CORRIGIDO: alt descritivo -->
+                            
                             <img src="./img/backend_tree.png" alt="Ilustração de arquitetura backend e APIs Node.js"
                                 class="poster-img">
                         </div>
